@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Payment Methods View Controller-->
+        <scene sceneID="XFB-nl-9U4">
+            <objects>
+                <viewController storyboardIdentifier="PaymentMethodsViewController" hidesBottomBarWhenPushed="YES" id="J7Y-tJ-y82" customClass="PaymentMethodsViewController" customModule="febys" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nIM-Tj-Acy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sta-JZ-YFA">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VNe-n2-ZEc" userLabel="Navigation View">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rtT-kF-eMT" customClass="FebysButton" customModule="febys" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="15" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="6hQ-1Q-Dwg"/>
+                                                    <constraint firstAttribute="width" constant="50" id="VDd-5x-on6"/>
+                                                </constraints>
+                                                <state key="normal" image="back-arrow"/>
+                                                <connections>
+                                                    <action selector="backButtonTapped:" destination="J7Y-tJ-y82" eventType="touchUpInside" id="Pmr-Or-lXI"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment Method" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dce-qz-N8t" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                                <rect key="frame" x="143.5" y="30" width="127" height="20"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="dce-qz-N8t" firstAttribute="centerY" secondItem="VNe-n2-ZEc" secondAttribute="centerY" id="4aK-Gi-Pb6"/>
+                                            <constraint firstItem="rtT-kF-eMT" firstAttribute="centerY" secondItem="VNe-n2-ZEc" secondAttribute="centerY" id="GYe-Xv-yfC"/>
+                                            <constraint firstAttribute="height" constant="80" id="Ul7-An-FpG"/>
+                                            <constraint firstItem="rtT-kF-eMT" firstAttribute="leading" secondItem="VNe-n2-ZEc" secondAttribute="leading" id="aNE-lh-AIT"/>
+                                            <constraint firstItem="dce-qz-N8t" firstAttribute="centerX" secondItem="VNe-n2-ZEc" secondAttribute="centerX" id="sKO-wz-vFG"/>
+                                        </constraints>
+                                    </view>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="g1r-5M-3RJ">
+                                        <rect key="frame" x="0.0" y="80" width="414" height="772"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </tableView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="klK-86-I3Q" customClass="FebysButton" customModule="febys" customModuleProvider="target">
+                                        <rect key="frame" x="21" y="701" width="372" height="60"/>
+                                        <color key="backgroundColor" name="BlackMainColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="xOp-Kr-cWM"/>
+                                        </constraints>
+                                        <state key="normal" title="Save and Continue">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="6"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="klK-86-I3Q" secondAttribute="trailing" constant="21" id="Af4-e5-SGQ"/>
+                                    <constraint firstItem="g1r-5M-3RJ" firstAttribute="leading" secondItem="Sta-JZ-YFA" secondAttribute="leading" id="D1U-n4-OBj"/>
+                                    <constraint firstItem="klK-86-I3Q" firstAttribute="leading" secondItem="Sta-JZ-YFA" secondAttribute="leading" constant="21" id="Vae-Op-Peg"/>
+                                    <constraint firstAttribute="bottom" secondItem="g1r-5M-3RJ" secondAttribute="bottom" id="ieV-q7-8ov"/>
+                                    <constraint firstAttribute="trailing" secondItem="VNe-n2-ZEc" secondAttribute="trailing" id="kgb-jB-2NX"/>
+                                    <constraint firstAttribute="trailing" secondItem="g1r-5M-3RJ" secondAttribute="trailing" id="lPL-uy-1iV"/>
+                                    <constraint firstItem="VNe-n2-ZEc" firstAttribute="leading" secondItem="Sta-JZ-YFA" secondAttribute="leading" id="lam-is-R8D"/>
+                                    <constraint firstItem="VNe-n2-ZEc" firstAttribute="top" secondItem="Sta-JZ-YFA" secondAttribute="top" id="rPO-8z-9ZD"/>
+                                    <constraint firstItem="g1r-5M-3RJ" firstAttribute="top" secondItem="VNe-n2-ZEc" secondAttribute="bottom" id="vJO-DR-UJJ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gu1-Lj-9iq"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Sta-JZ-YFA" firstAttribute="top" secondItem="gu1-Lj-9iq" secondAttribute="top" id="GAP-KU-o5H"/>
+                            <constraint firstItem="Sta-JZ-YFA" firstAttribute="trailing" secondItem="gu1-Lj-9iq" secondAttribute="trailing" id="aiX-Jk-elX"/>
+                            <constraint firstAttribute="bottom" secondItem="Sta-JZ-YFA" secondAttribute="bottom" id="iGv-KF-0lk"/>
+                            <constraint firstItem="gu1-Lj-9iq" firstAttribute="bottom" secondItem="klK-86-I3Q" secondAttribute="bottom" constant="8" id="sud-Uk-ZJI"/>
+                            <constraint firstItem="Sta-JZ-YFA" firstAttribute="leading" secondItem="gu1-Lj-9iq" secondAttribute="leading" id="vFD-Lv-6KC"/>
+                        </constraints>
+                    </view>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="paymentSaveMethodButton" destination="klK-86-I3Q" id="8gN-rT-Jd7"/>
+                        <outlet property="tableView" destination="g1r-5M-3RJ" id="8UQ-04-yMH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hvJ-0S-Kf5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="60.869565217391312" y="49.553571428571423"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="dce-qz-N8t">
+            <size key="intrinsicContentSize" width="127" height="19.5"/>
+        </designable>
+        <designable name="klK-86-I3Q">
+            <size key="intrinsicContentSize" width="129" height="30"/>
+        </designable>
+        <designable name="rtT-kF-eMT">
+            <size key="intrinsicContentSize" width="10.5" height="22"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="back-arrow" width="10.5" height="19"/>
+        <namedColor name="BlackMainColor">
+            <color red="0.12941176470588237" green="0.12941176470588237" blue="0.12941176470588237" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

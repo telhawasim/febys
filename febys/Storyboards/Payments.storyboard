@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TdP-FC-MiY">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Thank You View Controller-->
+        <scene sceneID="a8Z-6W-qRx">
+            <objects>
+                <viewController storyboardIdentifier="ThankYouViewController" id="nqm-XV-vx8" customClass="ThankYouViewController" customModule="febys" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DPo-vi-bd6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="913-uN-4Mn">
+                                <rect key="frame" x="0.0" y="44" width="414" height="65"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oba-2x-2JT" customClass="FebysButton" customModule="febys" customModuleProvider="target">
+                                        <rect key="frame" x="12" y="11.5" width="41" height="42"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                        <state key="normal" image="cart delete"/>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="JfU-6e-kHU">
+                                        <rect key="frame" x="152.5" y="18" width="109" height="29.5"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="oba-2x-2JT" firstAttribute="centerY" secondItem="913-uN-4Mn" secondAttribute="centerY" id="FSM-eU-ekX"/>
+                                    <constraint firstItem="JfU-6e-kHU" firstAttribute="centerY" secondItem="913-uN-4Mn" secondAttribute="centerY" id="JeL-AF-xbm"/>
+                                    <constraint firstItem="JfU-6e-kHU" firstAttribute="centerX" secondItem="913-uN-4Mn" secondAttribute="centerX" id="eFH-fk-sIc"/>
+                                    <constraint firstItem="oba-2x-2JT" firstAttribute="leading" secondItem="913-uN-4Mn" secondAttribute="leading" constant="12" id="fCG-5j-TMt"/>
+                                    <constraint firstAttribute="height" constant="65" id="gOs-r8-jgJ"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="roq-vy-h1T">
+                                <rect key="frame" x="0.0" y="109" width="414" height="615"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="swj-gE-vXy">
+                                        <rect key="frame" x="52" y="164.5" width="310.5" height="286"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ThankYouPop" translatesAutoresizingMaskIntoConstraints="NO" id="NJX-Ux-gjP">
+                                                <rect key="frame" x="115" y="8" width="80.5" height="74"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank You For Your Purchase" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="59o-Df-cEY" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="103" width="310.5" height="75"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="32"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sbx-td-6lh" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                                <rect key="frame" x="3" y="196" width="304.5" height="63"/>
+                                                <string key="text">Your Order has been placed! We will email you on order confirmation with details and tracking number once your order has been successfully processed</string>
+                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="SUN-bu-iGY">
+                                                <rect key="frame" x="70" y="269" width="170" height="16"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Order ID:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fza-jQ-H7W" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="58" height="16"/>
+                                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                                        <color key="textColor" red="0.59215686270000001" green="0.59215686270000001" blue="0.59215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FT133659380093" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wVq-FZ-pPJ">
+                                                        <rect key="frame" x="59" y="0.0" width="111" height="16"/>
+                                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="59o-Df-cEY" firstAttribute="leading" secondItem="swj-gE-vXy" secondAttribute="leading" id="D6H-GF-DhC"/>
+                                            <constraint firstItem="59o-Df-cEY" firstAttribute="top" secondItem="NJX-Ux-gjP" secondAttribute="bottom" constant="21" id="DFS-wr-Wqg"/>
+                                            <constraint firstItem="NJX-Ux-gjP" firstAttribute="top" secondItem="swj-gE-vXy" secondAttribute="top" constant="8" id="Drn-6X-Iun"/>
+                                            <constraint firstItem="Sbx-td-6lh" firstAttribute="leading" secondItem="swj-gE-vXy" secondAttribute="leading" constant="3" id="NsP-0Y-d7Q"/>
+                                            <constraint firstItem="SUN-bu-iGY" firstAttribute="centerX" secondItem="swj-gE-vXy" secondAttribute="centerX" id="WUI-gm-M8s"/>
+                                            <constraint firstAttribute="bottom" secondItem="SUN-bu-iGY" secondAttribute="bottom" constant="1" id="ieT-kv-T9Y"/>
+                                            <constraint firstItem="Sbx-td-6lh" firstAttribute="top" secondItem="59o-Df-cEY" secondAttribute="bottom" constant="18" id="qhr-Ja-yms"/>
+                                            <constraint firstItem="SUN-bu-iGY" firstAttribute="top" secondItem="Sbx-td-6lh" secondAttribute="bottom" constant="10" id="rWu-E0-8So"/>
+                                            <constraint firstItem="NJX-Ux-gjP" firstAttribute="centerX" secondItem="swj-gE-vXy" secondAttribute="centerX" id="tvJ-et-ScX"/>
+                                            <constraint firstAttribute="trailing" secondItem="Sbx-td-6lh" secondAttribute="trailing" constant="3" id="xj4-Q3-FlZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="59o-Df-cEY" secondAttribute="trailing" id="z2h-g6-jte"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="swj-gE-vXy" firstAttribute="width" secondItem="roq-vy-h1T" secondAttribute="width" multiplier="0.75" id="LAy-74-agz"/>
+                                    <constraint firstItem="swj-gE-vXy" firstAttribute="centerY" secondItem="roq-vy-h1T" secondAttribute="centerY" id="cyq-Nu-kEb"/>
+                                    <constraint firstItem="swj-gE-vXy" firstAttribute="centerX" secondItem="roq-vy-h1T" secondAttribute="centerX" id="rUH-bU-xfR"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Yx-dG-RFV" customClass="FebysButton" customModule="febys" customModuleProvider="target">
+                                <rect key="frame" x="21" y="724" width="372" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="ufh-NY-6CV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="Continue Shopping">
+                                    <color key="titleColor" name="BlackMainColor"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" name="BlackMainColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wfC-JD-Uis" customClass="FebysButton" customModule="febys" customModuleProvider="target">
+                                <rect key="frame" x="21" y="794" width="372" height="60"/>
+                                <color key="backgroundColor" name="BlackMainColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="oqi-0s-BSJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="My Orders">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ynl-z6-asg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="roq-vy-h1T" firstAttribute="leading" secondItem="ynl-z6-asg" secondAttribute="leading" id="0qh-rf-xjJ"/>
+                            <constraint firstItem="3Yx-dG-RFV" firstAttribute="leading" secondItem="ynl-z6-asg" secondAttribute="leading" constant="21" id="1AW-B4-Q1K"/>
+                            <constraint firstItem="ynl-z6-asg" firstAttribute="bottom" secondItem="wfC-JD-Uis" secondAttribute="bottom" constant="8" id="6lL-lJ-P4Q"/>
+                            <constraint firstItem="913-uN-4Mn" firstAttribute="trailing" secondItem="ynl-z6-asg" secondAttribute="trailing" id="I6t-J3-E8b"/>
+                            <constraint firstItem="roq-vy-h1T" firstAttribute="top" secondItem="913-uN-4Mn" secondAttribute="bottom" id="Skz-2C-R4i"/>
+                            <constraint firstItem="ynl-z6-asg" firstAttribute="trailing" secondItem="3Yx-dG-RFV" secondAttribute="trailing" constant="21" id="U1b-D8-8j5"/>
+                            <constraint firstItem="3Yx-dG-RFV" firstAttribute="top" secondItem="roq-vy-h1T" secondAttribute="bottom" id="WcH-D6-BWa"/>
+                            <constraint firstItem="913-uN-4Mn" firstAttribute="leading" secondItem="ynl-z6-asg" secondAttribute="leading" id="Z00-b2-1nG"/>
+                            <constraint firstItem="913-uN-4Mn" firstAttribute="top" secondItem="ynl-z6-asg" secondAttribute="top" id="baL-QW-Oz4"/>
+                            <constraint firstItem="ynl-z6-asg" firstAttribute="trailing" secondItem="wfC-JD-Uis" secondAttribute="trailing" constant="21" id="g20-sb-umA"/>
+                            <constraint firstItem="wfC-JD-Uis" firstAttribute="leading" secondItem="ynl-z6-asg" secondAttribute="leading" constant="21" id="kee-oj-jmc"/>
+                            <constraint firstItem="ynl-z6-asg" firstAttribute="trailing" secondItem="roq-vy-h1T" secondAttribute="trailing" id="pyr-rv-jjD"/>
+                            <constraint firstItem="wfC-JD-Uis" firstAttribute="top" secondItem="3Yx-dG-RFV" secondAttribute="bottom" constant="10" id="wUF-hn-UF7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="closeButton" destination="oba-2x-2JT" id="fxf-HD-H9j"/>
+                        <outlet property="continueShoppingButton" destination="3Yx-dG-RFV" id="vXD-Ds-O8T"/>
+                        <outlet property="myOrderButton" destination="wfC-JD-Uis" id="EeD-SD-loZ"/>
+                        <outlet property="orderIdLabel" destination="wVq-FZ-pPJ" id="2ik-L1-P68"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5eV-lC-h8w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3542.0289855072465" y="49.553571428571423"/>
+        </scene>
+        <!--Payments View Controller-->
+        <scene sceneID="Yuf-IH-Id6">
+            <objects>
+                <viewController storyboardIdentifier="PaymentsViewController" id="TdP-FC-MiY" customClass="PaymentsViewController" customModule="febys" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ez7-Yx-lB1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XB6-bj-mVF" userLabel="Navigation View">
+                                <rect key="frame" x="0.0" y="44" width="414" height="65"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1yu-ge-Bdd" customClass="FebysButton" customModule="febys" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="7.5" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="0aN-Ph-xWT"/>
+                                            <constraint firstAttribute="height" constant="50" id="Dgh-Yf-iTt"/>
+                                        </constraints>
+                                        <state key="normal" image="back-arrow"/>
+                                        <connections>
+                                            <action selector="backButtonTapped:" destination="TdP-FC-MiY" eventType="touchUpInside" id="63H-Yc-W5W"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment Methods" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZYI-91-RwZ" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                        <rect key="frame" x="139.5" y="23" width="135" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="ZYI-91-RwZ" firstAttribute="centerX" secondItem="XB6-bj-mVF" secondAttribute="centerX" id="TSR-4e-twF"/>
+                                    <constraint firstItem="ZYI-91-RwZ" firstAttribute="centerY" secondItem="XB6-bj-mVF" secondAttribute="centerY" id="fcZ-Hv-h9z"/>
+                                    <constraint firstItem="1yu-ge-Bdd" firstAttribute="centerY" secondItem="XB6-bj-mVF" secondAttribute="centerY" id="pZN-ON-xAY"/>
+                                    <constraint firstItem="1yu-ge-Bdd" firstAttribute="leading" secondItem="XB6-bj-mVF" secondAttribute="leading" id="qrI-ju-993"/>
+                                    <constraint firstAttribute="height" constant="65" id="yin-dE-nG4"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="F1o-aQ-GbB">
+                                <rect key="frame" x="0.0" y="109" width="414" height="595"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zUD-fd-3B2" userLabel="Total Amount View">
+                                <rect key="frame" x="0.0" y="704" width="414" height="192"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="yZY-uP-56b">
+                                        <rect key="frame" x="21" y="30" width="372" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1V8-8F-tif">
+                                                <rect key="frame" x="0.0" y="7" width="81" height="16"/>
+                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                                <color key="textColor" name="GrayMainColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RrB-aN-ZiA" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                                <rect key="frame" x="365" y="0.0" width="7" height="30"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gk1-31-o48" customClass="FebysButton" customModule="febys" customModuleProvider="target">
+                                        <rect key="frame" x="21" y="90" width="372" height="60"/>
+                                        <color key="backgroundColor" name="BlackMainColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="q04-aF-7N6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                                        <state key="normal" title="Pay Now">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="gk1-31-o48" firstAttribute="top" secondItem="yZY-uP-56b" secondAttribute="bottom" constant="30" id="9Y5-2b-sB1"/>
+                                    <constraint firstItem="yZY-uP-56b" firstAttribute="leading" secondItem="gk1-31-o48" secondAttribute="leading" id="DnV-SQ-GHg"/>
+                                    <constraint firstItem="yZY-uP-56b" firstAttribute="top" secondItem="zUD-fd-3B2" secondAttribute="top" constant="30" id="K6g-wS-Rk8"/>
+                                    <constraint firstItem="yZY-uP-56b" firstAttribute="trailing" secondItem="gk1-31-o48" secondAttribute="trailing" id="b8L-iG-jFS"/>
+                                    <constraint firstItem="gk1-31-o48" firstAttribute="leading" secondItem="zUD-fd-3B2" secondAttribute="leading" constant="21" id="hXS-BN-cnK"/>
+                                    <constraint firstAttribute="trailing" secondItem="gk1-31-o48" secondAttribute="trailing" constant="21" id="v1G-qz-Sm5"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.10000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="0.0" height="-20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fhs-yj-wlb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fhs-yj-wlb" firstAttribute="trailing" secondItem="zUD-fd-3B2" secondAttribute="trailing" id="1GY-EB-np1"/>
+                            <constraint firstItem="F1o-aQ-GbB" firstAttribute="leading" secondItem="fhs-yj-wlb" secondAttribute="leading" id="4ob-f2-bAd"/>
+                            <constraint firstItem="fhs-yj-wlb" firstAttribute="trailing" secondItem="F1o-aQ-GbB" secondAttribute="trailing" id="JJk-zi-sfO"/>
+                            <constraint firstItem="XB6-bj-mVF" firstAttribute="top" secondItem="fhs-yj-wlb" secondAttribute="top" id="Kd4-iH-DXz"/>
+                            <constraint firstAttribute="bottom" secondItem="zUD-fd-3B2" secondAttribute="bottom" id="Y9u-7b-0s9"/>
+                            <constraint firstItem="zUD-fd-3B2" firstAttribute="leading" secondItem="ez7-Yx-lB1" secondAttribute="leading" id="eYj-Zt-BqA"/>
+                            <constraint firstItem="F1o-aQ-GbB" firstAttribute="top" secondItem="XB6-bj-mVF" secondAttribute="bottom" id="g4s-Ly-cWv"/>
+                            <constraint firstAttribute="trailing" secondItem="XB6-bj-mVF" secondAttribute="trailing" id="gZk-Wf-G0Z"/>
+                            <constraint firstItem="fhs-yj-wlb" firstAttribute="bottom" secondItem="gk1-31-o48" secondAttribute="bottom" constant="8" id="k97-30-ml2"/>
+                            <constraint firstItem="zUD-fd-3B2" firstAttribute="top" secondItem="F1o-aQ-GbB" secondAttribute="bottom" id="sqV-xu-2ZS"/>
+                            <constraint firstItem="XB6-bj-mVF" firstAttribute="leading" secondItem="fhs-yj-wlb" secondAttribute="leading" id="wJc-eB-pDf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="payButton" destination="gk1-31-o48" id="0Al-hy-ji7"/>
+                        <outlet property="tableView" destination="F1o-aQ-GbB" id="Tqv-Tu-y7O"/>
+                        <outlet property="totalAmountLabel" destination="RrB-aN-ZiA" id="C8m-Mv-b0m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vj3-N3-I4E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2239" y="50"/>
+        </scene>
+        <!--Pay Stack View Controller-->
+        <scene sceneID="faM-I8-u2J">
+            <objects>
+                <viewController storyboardIdentifier="PayStackViewController" id="rbM-EL-K7W" customClass="PayStackViewController" customModule="febys" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3NS-vd-UsC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F3x-QQ-Ehv">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hyx-yy-dgr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hyx-yy-dgr" firstAttribute="trailing" secondItem="F3x-QQ-Ehv" secondAttribute="trailing" id="Kdr-9Z-KwH"/>
+                            <constraint firstItem="hyx-yy-dgr" firstAttribute="bottom" secondItem="F3x-QQ-Ehv" secondAttribute="bottom" id="Xn0-ZS-eI2"/>
+                            <constraint firstItem="F3x-QQ-Ehv" firstAttribute="top" secondItem="hyx-yy-dgr" secondAttribute="top" id="bs1-m6-GAJ"/>
+                            <constraint firstItem="F3x-QQ-Ehv" firstAttribute="leading" secondItem="hyx-yy-dgr" secondAttribute="leading" id="prN-Ah-MfY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="F3x-QQ-Ehv" id="YY7-6z-Rav"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m9e-kx-8dW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2238" y="727"/>
+        </scene>
+        <!--Split Payment View Controller-->
+        <scene sceneID="sjO-jq-AS0">
+            <objects>
+                <viewController storyboardIdentifier="SplitPaymentViewController" id="JYO-XR-6bi" customClass="SplitPaymentViewController" customModule="febys" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mqs-ou-AgF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uRm-U6-Kiv" userLabel="Navigation View">
+                                <rect key="frame" x="0.0" y="44" width="414" height="65"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kRL-Vv-HZq" customClass="FebysButton" customModule="febys" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="7.5" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="7oK-ez-KNd"/>
+                                            <constraint firstAttribute="width" constant="50" id="xQO-L8-5Gf"/>
+                                        </constraints>
+                                        <state key="normal" image="back-arrow"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment Methods" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zDK-jv-lVO" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                        <rect key="frame" x="139.5" y="23" width="135" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="0jp-Vv-t5n"/>
+                                    <constraint firstItem="zDK-jv-lVO" firstAttribute="centerY" secondItem="uRm-U6-Kiv" secondAttribute="centerY" id="6d1-Fn-6cL"/>
+                                    <constraint firstItem="kRL-Vv-HZq" firstAttribute="leading" secondItem="uRm-U6-Kiv" secondAttribute="leading" id="Uby-Oa-rjk"/>
+                                    <constraint firstItem="zDK-jv-lVO" firstAttribute="centerX" secondItem="uRm-U6-Kiv" secondAttribute="centerX" id="Uum-3f-N2N"/>
+                                    <constraint firstItem="kRL-Vv-HZq" firstAttribute="centerY" secondItem="uRm-U6-Kiv" secondAttribute="centerY" id="gjq-5e-FKc"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FhA-aY-MtY">
+                                <rect key="frame" x="40" y="335" width="334" height="226"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="btJ-C9-ash">
+                                        <rect key="frame" x="0.0" y="0.0" width="334" height="226"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="YYb-qY-9WM">
+                                                <rect key="frame" x="18.5" y="0.0" width="297" height="131"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Insufficient Wallet Balance" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K9q-Cv-K9l">
+                                                        <rect key="frame" x="42.5" y="0.0" width="212" height="75"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="32"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pay the difference using a different payment method by selecting split pay." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="chx-S5-HVa">
+                                                        <rect key="frame" x="0.0" y="90" width="297" height="41"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="ofH-0j-mdR">
+                                                <rect key="frame" x="0.0" y="166" width="334" height="60"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rn9-T6-FYo" customClass="FebysButton" customModule="febys" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="164" height="60"/>
+                                                        <color key="backgroundColor" name="BlackMainColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="60" id="oQG-Yu-Egq"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                                                        <state key="normal" title="Split Pay">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Een-eb-ugl" customClass="FebysButton" customModule="febys" customModuleProvider="target">
+                                                        <rect key="frame" x="170" y="0.0" width="164" height="60"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="60" id="uXh-WS-GMi"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                                                        <state key="normal" title="Cancel">
+                                                            <color key="titleColor" name="BlackMainColor"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="ofH-0j-mdR" secondAttribute="trailing" id="1aB-YU-Rn1"/>
+                                            <constraint firstItem="ofH-0j-mdR" firstAttribute="leading" secondItem="btJ-C9-ash" secondAttribute="leading" id="UZc-kH-ALA"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="btJ-C9-ash" secondAttribute="trailing" id="14u-Ch-yf1"/>
+                                    <constraint firstAttribute="bottom" secondItem="btJ-C9-ash" secondAttribute="bottom" id="3dg-gL-PI9"/>
+                                    <constraint firstItem="btJ-C9-ash" firstAttribute="leading" secondItem="FhA-aY-MtY" secondAttribute="leading" id="unT-O5-kmg"/>
+                                    <constraint firstItem="btJ-C9-ash" firstAttribute="top" secondItem="FhA-aY-MtY" secondAttribute="top" id="yBH-XH-Y8q"/>
+                                </constraints>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3no-c5-DZM" userLabel="Total Amount View">
+                                <rect key="frame" x="0.0" y="704" width="414" height="192"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="YgF-dv-BYQ">
+                                        <rect key="frame" x="21" y="30" width="372" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DNJ-IQ-7b5">
+                                                <rect key="frame" x="0.0" y="7" width="81" height="16"/>
+                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                                <color key="textColor" name="GrayMainColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jNx-dz-GLg" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                                <rect key="frame" x="365" y="0.0" width="7" height="30"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sap-L7-d99" customClass="FebysButton" customModule="febys" customModuleProvider="target">
+                                        <rect key="frame" x="21" y="90" width="372" height="60"/>
+                                        <color key="backgroundColor" name="BlackMainColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="LrR-z3-HfM"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                                        <state key="normal" title="Pay Now">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="Sap-L7-d99" firstAttribute="top" secondItem="YgF-dv-BYQ" secondAttribute="bottom" constant="30" id="16F-9w-xUm"/>
+                                    <constraint firstItem="YgF-dv-BYQ" firstAttribute="trailing" secondItem="Sap-L7-d99" secondAttribute="trailing" id="4Fd-QO-uqP"/>
+                                    <constraint firstAttribute="trailing" secondItem="Sap-L7-d99" secondAttribute="trailing" constant="21" id="BL8-gl-JaN"/>
+                                    <constraint firstItem="Sap-L7-d99" firstAttribute="leading" secondItem="3no-c5-DZM" secondAttribute="leading" constant="21" id="cA7-EQ-Vb0"/>
+                                    <constraint firstItem="YgF-dv-BYQ" firstAttribute="leading" secondItem="Sap-L7-d99" secondAttribute="leading" id="jdB-01-pq4"/>
+                                    <constraint firstItem="YgF-dv-BYQ" firstAttribute="top" secondItem="3no-c5-DZM" secondAttribute="top" constant="30" id="rdu-bc-dui"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.10000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="0.0" height="-20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ZwV-Zu-EF1"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="FhA-aY-MtY" firstAttribute="centerY" secondItem="mqs-ou-AgF" secondAttribute="centerY" id="0CV-nK-zef"/>
+                            <constraint firstItem="ZwV-Zu-EF1" firstAttribute="bottom" secondItem="Sap-L7-d99" secondAttribute="bottom" constant="8" id="36f-tX-cpl"/>
+                            <constraint firstAttribute="bottom" secondItem="3no-c5-DZM" secondAttribute="bottom" id="A3G-Ki-uYd"/>
+                            <constraint firstItem="ZwV-Zu-EF1" firstAttribute="trailing" secondItem="3no-c5-DZM" secondAttribute="trailing" id="E5x-1I-d9b"/>
+                            <constraint firstItem="FhA-aY-MtY" firstAttribute="leading" secondItem="mqs-ou-AgF" secondAttribute="leading" constant="40" id="OZa-3g-u2M"/>
+                            <constraint firstAttribute="trailing" secondItem="uRm-U6-Kiv" secondAttribute="trailing" id="OxV-Gf-T3G"/>
+                            <constraint firstAttribute="trailing" secondItem="FhA-aY-MtY" secondAttribute="trailing" constant="40" id="QnN-Sq-NVg"/>
+                            <constraint firstItem="uRm-U6-Kiv" firstAttribute="top" secondItem="ZwV-Zu-EF1" secondAttribute="top" id="TkO-KW-9DD"/>
+                            <constraint firstItem="uRm-U6-Kiv" firstAttribute="leading" secondItem="ZwV-Zu-EF1" secondAttribute="leading" id="TwW-AP-wS7"/>
+                            <constraint firstItem="FhA-aY-MtY" firstAttribute="centerX" secondItem="mqs-ou-AgF" secondAttribute="centerX" id="s8K-tA-y0X"/>
+                            <constraint firstItem="3no-c5-DZM" firstAttribute="leading" secondItem="mqs-ou-AgF" secondAttribute="leading" id="wfN-2b-jBz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="kRL-Vv-HZq" id="ZDN-8Q-TIJ"/>
+                        <outlet property="cancelButton" destination="Een-eb-ugl" id="66s-qT-VZA"/>
+                        <outlet property="splitPayButton" destination="rn9-T6-FYo" id="xHk-mR-APG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wL4-ik-uQq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2888" y="50"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="1yu-ge-Bdd">
+            <size key="intrinsicContentSize" width="10.5" height="22"/>
+        </designable>
+        <designable name="3Yx-dG-RFV">
+            <size key="intrinsicContentSize" width="161" height="34"/>
+        </designable>
+        <designable name="59o-Df-cEY">
+            <size key="intrinsicContentSize" width="422.5" height="37.5"/>
+        </designable>
+        <designable name="Een-eb-ugl">
+            <size key="intrinsicContentSize" width="58" height="34"/>
+        </designable>
+        <designable name="RrB-aN-ZiA">
+            <size key="intrinsicContentSize" width="7" height="30"/>
+        </designable>
+        <designable name="Sap-L7-d99">
+            <size key="intrinsicContentSize" width="75" height="34"/>
+        </designable>
+        <designable name="Sbx-td-6lh">
+            <size key="intrinsicContentSize" width="942.5" height="16"/>
+        </designable>
+        <designable name="ZYI-91-RwZ">
+            <size key="intrinsicContentSize" width="135" height="19.5"/>
+        </designable>
+        <designable name="fza-jQ-H7W">
+            <size key="intrinsicContentSize" width="58" height="16"/>
+        </designable>
+        <designable name="gk1-31-o48">
+            <size key="intrinsicContentSize" width="75" height="34"/>
+        </designable>
+        <designable name="jNx-dz-GLg">
+            <size key="intrinsicContentSize" width="7" height="30"/>
+        </designable>
+        <designable name="kRL-Vv-HZq">
+            <size key="intrinsicContentSize" width="10.5" height="22"/>
+        </designable>
+        <designable name="oba-2x-2JT">
+            <size key="intrinsicContentSize" width="41" height="42"/>
+        </designable>
+        <designable name="rn9-T6-FYo">
+            <size key="intrinsicContentSize" width="74" height="34"/>
+        </designable>
+        <designable name="wfC-JD-Uis">
+            <size key="intrinsicContentSize" width="87" height="34"/>
+        </designable>
+        <designable name="zDK-jv-lVO">
+            <size key="intrinsicContentSize" width="135" height="19.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="ThankYouPop" width="80.5" height="74"/>
+        <image name="back-arrow" width="10.5" height="19"/>
+        <image name="cart delete" width="21" height="21"/>
+        <image name="homeLogo" width="109" height="29.5"/>
+        <namedColor name="BlackMainColor">
+            <color red="0.12941176470588237" green="0.12941176470588237" blue="0.12941176470588237" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="GrayMainColor">
+            <color red="0.58823529411764708" green="0.58823529411764708" blue="0.58823529411764708" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="OrderDetailFooterView" customModule="febys" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="399" height="292"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xfh-hU-N00">
+                    <rect key="frame" x="0.0" y="0.0" width="399" height="292"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="hTM-Te-yX4" userLabel="Status Detail Stack View">
+                            <rect key="frame" x="0.0" y="0.0" width="399" height="273"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pRI-e9-kPs" userLabel="Spacing View">
+                                    <rect key="frame" x="0.0" y="0.0" width="399" height="25"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ner-tZ-mIY">
+                                            <rect key="frame" x="0.0" y="0.0" width="399" height="1"/>
+                                            <color key="backgroundColor" name="MildGreyColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="1" id="n0d-lr-YnB"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="ner-tZ-mIY" firstAttribute="top" secondItem="pRI-e9-kPs" secondAttribute="top" id="C0K-t1-Ewq"/>
+                                        <constraint firstItem="ner-tZ-mIY" firstAttribute="leading" secondItem="pRI-e9-kPs" secondAttribute="leading" id="Q7L-fO-gIa"/>
+                                        <constraint firstAttribute="trailing" secondItem="ner-tZ-mIY" secondAttribute="trailing" id="d5e-68-tFk"/>
+                                        <constraint firstAttribute="height" constant="25" id="nWZ-2C-RZG"/>
+                                    </constraints>
+                                </view>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="lR4-Hp-ECs">
+                                    <rect key="frame" x="0.0" y="29" width="399" height="22"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Order Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Px-mY-3Hf">
+                                            <rect key="frame" x="0.0" y="0.0" width="79.5" height="22"/>
+                                            <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                            <color key="textColor" name="GrayMainColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Processing" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vzE-8M-zOT" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                            <rect key="frame" x="329.5" y="0.0" width="69.5" height="22"/>
+                                            <color key="backgroundColor" name="LightBlue"/>
+                                            <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="leftInset">
+                                                    <real key="value" value="6"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="rightInset">
+                                                    <real key="value" value="6"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="5"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="22" id="d9O-hP-UWj"/>
+                                    </constraints>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="H4y-2H-ava">
+                                    <rect key="frame" x="0.0" y="55" width="399" height="22"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9nY-F4-7UJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="81" height="22"/>
+                                            <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                            <color key="textColor" name="GrayMainColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$209.98" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XJM-7q-fiS" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                            <rect key="frame" x="348" y="0.0" width="51" height="22"/>
+                                            <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                            <color key="textColor" name="BlackMainColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="22" id="rqf-t7-0uT"/>
+                                    </constraints>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="kd7-mM-OHz">
+                                    <rect key="frame" x="0.0" y="81" width="399" height="22"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tracking Code" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B5Q-Mp-fif">
+                                            <rect key="frame" x="0.0" y="0.0" width="91" height="22"/>
+                                            <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                            <color key="textColor" name="GrayMainColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TzJ-HS-fzx" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                            <rect key="frame" x="348" y="0.0" width="51" height="22"/>
+                                            <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                            <color key="textColor" name="BlackMainColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="22" id="YrU-vI-jRQ"/>
+                                    </constraints>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="52V-MC-d5A">
+                                    <rect key="frame" x="0.0" y="107" width="399" height="24"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Delivery Services" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BdW-X6-8zF">
+                                            <rect key="frame" x="0.0" y="4" width="108.5" height="16"/>
+                                            <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                            <color key="textColor" name="GrayMainColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shippingImage" translatesAutoresizingMaskIntoConstraints="NO" id="AMQ-bV-bzQ">
+                                            <rect key="frame" x="344" y="0.0" width="55" height="24"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="24" id="4RA-K4-Jp2"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="AMQ-bV-bzQ" secondAttribute="bottom" id="RKm-QI-AYq"/>
+                                        <constraint firstItem="AMQ-bV-bzQ" firstAttribute="top" secondItem="52V-MC-d5A" secondAttribute="top" id="a1I-Xm-fM7"/>
+                                    </constraints>
+                                </stackView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3OM-rk-6JM">
+                                    <rect key="frame" x="0.0" y="135" width="399" height="49"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Wbh-dY-k92">
+                                            <rect key="frame" x="0.0" y="15" width="204" height="34"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1z0-1G-GwB" customClass="FebysButton" customModule="febys" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="99" height="34"/>
+                                                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                                    <inset key="contentEdgeInsets" minX="12" minY="0.0" maxX="12" maxY="0.0"/>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                    <state key="normal" title="Add Review">
+                                                        <color key="titleColor" name="BlackMainColor"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                            <color key="value" name="BlackMainColor"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="37p-gR-FKQ" customClass="FebysButton" customModule="febys" customModuleProvider="target">
+                                                    <rect key="frame" x="107" y="0.0" width="97" height="34"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                                    <inset key="contentEdgeInsets" minX="12" minY="0.0" maxX="12" maxY="0.0"/>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                    <state key="normal" title="Return item">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </state>
+                                                    <state key="disabled" title="Return item"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="34" id="QE4-pk-TFV"/>
+                                            </constraints>
+                                        </stackView>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstItem="Wbh-dY-k92" firstAttribute="top" secondItem="3OM-rk-6JM" secondAttribute="top" constant="15" id="QID-Tk-2fC"/>
+                                        <constraint firstAttribute="bottom" secondItem="Wbh-dY-k92" secondAttribute="bottom" id="Qc7-fg-CZ4"/>
+                                        <constraint firstItem="Wbh-dY-k92" firstAttribute="leading" secondItem="3OM-rk-6JM" secondAttribute="leading" id="YxK-eD-gAS"/>
+                                        <constraint firstItem="Wbh-dY-k92" firstAttribute="leading" secondItem="3OM-rk-6JM" secondAttribute="leading" id="byk-Bn-hhL"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IS4-ml-dp5">
+                                    <rect key="frame" x="0.0" y="188" width="399" height="66"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vli-vE-z2c">
+                                            <rect key="frame" x="0.0" y="6" width="399" height="60"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="d7H-Re-jFX">
+                                                    <rect key="frame" x="12" y="19" width="375" height="22"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Order Cancel Reason:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x2T-vn-tdT">
+                                                            <rect key="frame" x="0.0" y="0.0" width="139.5" height="22"/>
+                                                            <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change of Mind" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s2i-W7-oXs" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                                            <rect key="frame" x="276" y="0.0" width="99" height="22"/>
+                                                            <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                                            <color key="textColor" name="RedMainColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="22" id="TcN-rx-BdA"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" name="LightRed"/>
+                                            <constraints>
+                                                <constraint firstItem="d7H-Re-jFX" firstAttribute="top" secondItem="Vli-vE-z2c" secondAttribute="top" constant="19" id="MU9-ze-sVm"/>
+                                                <constraint firstItem="d7H-Re-jFX" firstAttribute="leading" secondItem="Vli-vE-z2c" secondAttribute="leading" constant="12" id="NlD-d6-k47"/>
+                                                <constraint firstAttribute="bottom" secondItem="d7H-Re-jFX" secondAttribute="bottom" constant="19" id="bzL-QB-xME"/>
+                                                <constraint firstAttribute="trailing" secondItem="d7H-Re-jFX" secondAttribute="trailing" constant="12" id="vQ5-dT-IZ7"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                    <real key="value" value="6"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                        </view>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Vli-vE-z2c" firstAttribute="top" secondItem="IS4-ml-dp5" secondAttribute="top" constant="6" id="Rtd-Xt-vBu"/>
+                                        <constraint firstItem="Vli-vE-z2c" firstAttribute="leading" secondItem="IS4-ml-dp5" secondAttribute="leading" id="izu-xq-Rbs"/>
+                                        <constraint firstAttribute="bottom" secondItem="Vli-vE-z2c" secondAttribute="bottom" id="jsu-Z8-Mt0"/>
+                                        <constraint firstAttribute="trailing" secondItem="Vli-vE-z2c" secondAttribute="trailing" id="wG4-uR-ghc"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dNp-OW-Pmv" userLabel="Spacing View">
+                                    <rect key="frame" x="0.0" y="258" width="399" height="15"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="15" id="EZh-cK-G5h"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="hTM-Te-yX4" firstAttribute="top" secondItem="xfh-hU-N00" secondAttribute="top" id="2gV-Ra-okn"/>
+                        <constraint firstAttribute="trailing" secondItem="hTM-Te-yX4" secondAttribute="trailing" id="2pN-Na-5ow"/>
+                        <constraint firstItem="hTM-Te-yX4" firstAttribute="leading" secondItem="xfh-hU-N00" secondAttribute="leading" id="F8Y-fo-kRT"/>
+                        <constraint firstAttribute="bottom" secondItem="hTM-Te-yX4" secondAttribute="bottom" priority="999" id="SHl-zi-5jz"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="xfh-hU-N00" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="1RB-G0-LIm"/>
+                <constraint firstAttribute="trailing" secondItem="xfh-hU-N00" secondAttribute="trailing" id="73g-VE-DWQ"/>
+                <constraint firstItem="xfh-hU-N00" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="UcQ-tW-yaP"/>
+                <constraint firstAttribute="bottom" secondItem="xfh-hU-N00" secondAttribute="bottom" id="hik-rH-vva"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="actionButtonsView" destination="3OM-rk-6JM" id="hge-GV-1Kd"/>
+                <outlet property="addReviewButton" destination="1z0-1G-GwB" id="cg6-z7-1pU"/>
+                <outlet property="cancelDetailView" destination="IS4-ml-dp5" id="32t-kY-tSX"/>
+                <outlet property="cancelReasonLabel" destination="s2i-W7-oXs" id="I4M-fM-TGu"/>
+                <outlet property="mainStackView" destination="hTM-Te-yX4" id="w6g-nu-wQe"/>
+                <outlet property="orderAmount" destination="XJM-7q-fiS" id="Liw-SI-xh0"/>
+                <outlet property="orderStatus" destination="vzE-8M-zOT" id="vob-lU-sus"/>
+                <outlet property="priceDetailStack" destination="H4y-2H-ava" id="9BO-4C-Ubx"/>
+                <outlet property="returnItemButton" destination="37p-gR-FKQ" id="4FV-er-Ho9"/>
+                <outlet property="shippingDetailStack" destination="52V-MC-d5A" id="ZDx-VN-bzF"/>
+                <outlet property="shippingImage" destination="AMQ-bV-bzQ" id="Lq6-7g-kdC"/>
+                <outlet property="trackingCode" destination="TzJ-HS-fzx" id="aE0-Tk-zXM"/>
+                <outlet property="trackingDetailStack" destination="kd7-mM-OHz" id="h3f-B8-ofw"/>
+            </connections>
+            <point key="canvasLocation" x="126.81159420289856" y="-101.11607142857143"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="1z0-1G-GwB">
+            <size key="intrinsicContentSize" width="99" height="16"/>
+        </designable>
+        <designable name="37p-gR-FKQ">
+            <size key="intrinsicContentSize" width="97" height="16"/>
+        </designable>
+        <designable name="TzJ-HS-fzx"/>
+        <designable name="XJM-7q-fiS">
+            <size key="intrinsicContentSize" width="51" height="16"/>
+        </designable>
+        <designable name="s2i-W7-oXs">
+            <size key="intrinsicContentSize" width="99" height="16"/>
+        </designable>
+        <designable name="vzE-8M-zOT">
+            <size key="intrinsicContentSize" width="69.5" height="16"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="shippingImage" width="55" height="22"/>
+        <namedColor name="BlackMainColor">
+            <color red="0.12941176470588237" green="0.12941176470588237" blue="0.12941176470588237" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="GrayMainColor">
+            <color red="0.58823529411764708" green="0.58823529411764708" blue="0.58823529411764708" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="LightBlue">
+            <color red="0.80784313725490198" green="0.89803921568627454" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="LightRed">
+            <color red="0.7686274509803922" green="0.074509803921568626" blue="0.16078431372549021" alpha="0.10000000149011612" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="MildGreyColor">
+            <color red="0.88235294117647056" green="0.89803921568627454" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="RedMainColor">
+            <color red="0.7686274509803922" green="0.074509803921568626" blue="0.16078431372549021" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

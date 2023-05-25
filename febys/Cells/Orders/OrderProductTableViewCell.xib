@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="184" id="KGk-i7-Jjw" customClass="OrderProductTableViewCell" customModule="febys" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="364" height="184"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="364" height="184"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="avX-wt-dHe">
+                        <rect key="frame" x="0.0" y="0.0" width="364" height="182.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="60i-zG-5d3" userLabel="Divider">
+                                <rect key="frame" x="0.0" y="0.0" width="364" height="0.0"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="Hlc-1s-Wwx"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bfk-zC-1Fv">
+                                <rect key="frame" x="0.0" y="20" width="364" height="141.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="4hq-n2-pbM">
+                                        <rect key="frame" x="0.0" y="0.0" width="364" height="141.5"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no-image" translatesAutoresizingMaskIntoConstraints="NO" id="yZy-B6-YHa">
+                                                <rect key="frame" x="0.0" y="0.0" width="104" height="104"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="104" id="e9d-Cq-hH9"/>
+                                                    <constraint firstAttribute="width" constant="104" id="hYm-FR-hMH"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="MildGreyColor"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="yhZ-99-1MM">
+                                                <rect key="frame" x="124" y="0.0" width="204" height="141.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ORA-g0-UpS" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="204" height="16"/>
+                                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="lineHeight">
+                                                                <real key="value" value="18"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="topInset">
+                                                                <real key="value" value="2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" translatesAutoresizingMaskIntoConstraints="NO" id="qg5-SI-xqn">
+                                                        <rect key="frame" x="0.0" y="21" width="204" height="16"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Quantity: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Zr-ay-Gdg" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="60" height="16"/>
+                                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                                                <color key="textColor" red="0.59215686270000001" green="0.59215686270000001" blue="0.59215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="123" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8v8-8G-fQx" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                                                <rect key="frame" x="60" y="0.0" width="144" height="16"/>
+                                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="APy-xx-gdd">
+                                                        <rect key="frame" x="0.0" y="42" width="204" height="16"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SKU ID: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="asK-0l-aUE" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="54.5" height="16"/>
+                                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                                                <color key="textColor" red="0.59215686270000001" green="0.59215686270000001" blue="0.59215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="123456" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5dQ-17-HG6" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                                                <rect key="frame" x="54.5" y="0.0" width="149.5" height="16"/>
+                                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="qrl-dA-oad">
+                                                        <rect key="frame" x="0.0" y="63" width="204" height="51.5"/>
+                                                        <subviews>
+                                                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="TkF-5H-dsy">
+                                                                <rect key="frame" x="-2" y="0.0" width="2" height="51.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="$89.39" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AUf-l0-5ly" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="19" width="0.0" height="13.5"/>
+                                                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="12"/>
+                                                                        <color key="textColor" name="GrayMainColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tfT-uJ-Bml" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                                                        <rect key="frame" x="2" y="19" width="0.0" height="13.5"/>
+                                                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="12"/>
+                                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$89.39" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b1R-ia-kHJ" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="204" height="51.5"/>
+                                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="b1R-ia-kHJ" secondAttribute="bottom" id="Ojd-sx-Oap"/>
+                                                            <constraint firstItem="b1R-ia-kHJ" firstAttribute="top" secondItem="qrl-dA-oad" secondAttribute="top" id="e6P-qE-eKc"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pending" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MAG-ax-szE" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="119.5" width="44.5" height="22"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="22" id="pje-AK-BFH"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="12"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="leftInset">
+                                                                <real key="value" value="12"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="rightInset">
+                                                                <real key="value" value="12"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="5"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="qg5-SI-xqn" secondAttribute="trailing" id="2dB-Td-0Xv"/>
+                                                    <constraint firstItem="qg5-SI-xqn" firstAttribute="leading" secondItem="yhZ-99-1MM" secondAttribute="leading" id="3xF-oS-bSA"/>
+                                                    <constraint firstAttribute="trailing" secondItem="ORA-g0-UpS" secondAttribute="trailing" id="6L6-vW-CZm"/>
+                                                    <constraint firstItem="ORA-g0-UpS" firstAttribute="leading" secondItem="yhZ-99-1MM" secondAttribute="leading" id="6kj-8Y-TQ5"/>
+                                                    <constraint firstAttribute="trailing" secondItem="APy-xx-gdd" secondAttribute="trailing" id="Kmy-mS-OCi"/>
+                                                    <constraint firstAttribute="trailing" secondItem="qrl-dA-oad" secondAttribute="trailing" id="NZ2-5P-rXX"/>
+                                                    <constraint firstItem="APy-xx-gdd" firstAttribute="leading" secondItem="yhZ-99-1MM" secondAttribute="leading" id="Nt4-pa-Zpj"/>
+                                                    <constraint firstItem="qrl-dA-oad" firstAttribute="leading" secondItem="yhZ-99-1MM" secondAttribute="leading" id="iAO-yL-NNA"/>
+                                                </constraints>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xb0-0Q-446">
+                                                <rect key="frame" x="348" y="0.0" width="16" height="141.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="16" id="sEr-D2-0a7"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="radioUnfilled"/>
+                                                <state key="selected" image="radioFilled"/>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="yhZ-99-1MM" secondAttribute="bottom" id="408-TI-OT2"/>
+                                            <constraint firstItem="yhZ-99-1MM" firstAttribute="top" secondItem="4hq-n2-pbM" secondAttribute="top" id="HdM-Pb-XXm"/>
+                                            <constraint firstItem="yZy-B6-YHa" firstAttribute="top" secondItem="4hq-n2-pbM" secondAttribute="top" id="Zng-Qx-gSE"/>
+                                            <constraint firstItem="Xb0-0Q-446" firstAttribute="top" secondItem="4hq-n2-pbM" secondAttribute="top" id="p58-HD-goO"/>
+                                            <constraint firstAttribute="bottom" secondItem="Xb0-0Q-446" secondAttribute="bottom" id="v4d-Ox-bkc"/>
+                                        </constraints>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lju-EH-RZJ" customClass="FebysButton" customModule="febys" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="364" height="141.5"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="4hq-n2-pbM" secondAttribute="bottom" id="5bh-GS-Mq5"/>
+                                    <constraint firstAttribute="trailing" secondItem="4hq-n2-pbM" secondAttribute="trailing" id="8nj-HY-pEv"/>
+                                    <constraint firstItem="Lju-EH-RZJ" firstAttribute="leading" secondItem="Bfk-zC-1Fv" secondAttribute="leading" id="JdY-Vk-TIE"/>
+                                    <constraint firstItem="4hq-n2-pbM" firstAttribute="top" secondItem="Bfk-zC-1Fv" secondAttribute="top" id="XCA-jV-ocm"/>
+                                    <constraint firstItem="4hq-n2-pbM" firstAttribute="leading" secondItem="Bfk-zC-1Fv" secondAttribute="leading" id="aEu-r2-DHj"/>
+                                    <constraint firstItem="Lju-EH-RZJ" firstAttribute="top" secondItem="Bfk-zC-1Fv" secondAttribute="top" id="epi-4f-HJG"/>
+                                    <constraint firstAttribute="trailing" secondItem="Lju-EH-RZJ" secondAttribute="trailing" id="iwE-EB-LRc"/>
+                                    <constraint firstAttribute="bottom" secondItem="Lju-EH-RZJ" secondAttribute="bottom" id="ooq-g6-8gx"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gKH-vc-sx0" userLabel="Divider">
+                                <rect key="frame" x="0.0" y="181.5" width="364" height="1"/>
+                                <color key="backgroundColor" name="MildGreyColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="jIR-3g-42q"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="avX-wt-dHe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="AAj-UD-0Im"/>
+                    <constraint firstItem="avX-wt-dHe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="EuY-eg-xcs"/>
+                    <constraint firstAttribute="bottom" secondItem="avX-wt-dHe" secondAttribute="bottom" priority="250" id="FBM-ed-GBr"/>
+                    <constraint firstAttribute="trailing" secondItem="avX-wt-dHe" secondAttribute="trailing" id="a0V-nL-aG8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dividerView" destination="gKH-vc-sx0" id="ksM-3y-nAb"/>
+                <outlet property="mainStackView" destination="avX-wt-dHe" id="USz-yM-Saz"/>
+                <outlet property="originalPrice" destination="AUf-l0-5ly" id="aEU-sv-k1u"/>
+                <outlet property="originalPriceStackView" destination="TkF-5H-dsy" id="REJ-PM-mY5"/>
+                <outlet property="productImage" destination="yZy-B6-YHa" id="pBF-8T-F3n"/>
+                <outlet property="productName" destination="ORA-g0-UpS" id="GXJ-Fi-jJn"/>
+                <outlet property="productPrice" destination="b1R-ia-kHJ" id="4gC-6L-pQs"/>
+                <outlet property="productQuantity" destination="8v8-8G-fQx" id="que-cW-piQ"/>
+                <outlet property="radioButton" destination="Xb0-0Q-446" id="YLg-bd-iBN"/>
+                <outlet property="selectProductButton" destination="Lju-EH-RZJ" id="dG6-lr-g3f"/>
+                <outlet property="skuID" destination="5dQ-17-HG6" id="TyM-Lu-noM"/>
+                <outlet property="statusLabel" destination="MAG-ax-szE" id="KpN-sK-tfo"/>
+            </connections>
+            <point key="canvasLocation" x="-120.28985507246378" y="-12.053571428571429"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="5dQ-17-HG6">
+            <size key="intrinsicContentSize" width="47" height="16"/>
+        </designable>
+        <designable name="7Zr-ay-Gdg">
+            <size key="intrinsicContentSize" width="60" height="16"/>
+        </designable>
+        <designable name="8v8-8G-fQx">
+            <size key="intrinsicContentSize" width="23.5" height="16"/>
+        </designable>
+        <designable name="AUf-l0-5ly">
+            <size key="intrinsicContentSize" width="37" height="13.5"/>
+        </designable>
+        <designable name="Lju-EH-RZJ">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+        <designable name="MAG-ax-szE">
+            <size key="intrinsicContentSize" width="44.5" height="13.5"/>
+        </designable>
+        <designable name="ORA-g0-UpS">
+            <size key="intrinsicContentSize" width="37.5" height="16"/>
+        </designable>
+        <designable name="asK-0l-aUE">
+            <size key="intrinsicContentSize" width="54.5" height="16"/>
+        </designable>
+        <designable name="b1R-ia-kHJ">
+            <size key="intrinsicContentSize" width="43" height="16"/>
+        </designable>
+        <designable name="tfT-uJ-Bml">
+            <size key="intrinsicContentSize" width="4" height="13.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="no-image" width="216" height="216"/>
+        <image name="radioFilled" width="14" height="14"/>
+        <image name="radioUnfilled" width="14" height="14"/>
+        <namedColor name="GrayMainColor">
+            <color red="0.58823529411764708" green="0.58823529411764708" blue="0.58823529411764708" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="MildGreyColor">
+            <color red="0.88235294117647056" green="0.89803921568627454" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

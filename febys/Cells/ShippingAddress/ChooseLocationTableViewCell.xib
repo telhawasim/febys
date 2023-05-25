@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Regular.ttf">
+            <string>Cairo-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="45" id="KGk-i7-Jjw" customClass="ChooseLocationTableViewCell" customModule="febys" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="372" height="45"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="372" height="45"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b34-4h-F0D">
+                        <rect key="frame" x="21" y="0.0" width="330" height="45"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="cQs-d3-x3U">
+                                <rect key="frame" x="0.0" y="10" width="330" height="25"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="252" verticalHuggingPriority="251" image="ic_location_pin" translatesAutoresizingMaskIntoConstraints="NO" id="UWL-99-0eH">
+                                        <rect key="frame" x="0.0" y="2.5" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="I2y-eT-1ni"/>
+                                            <constraint firstAttribute="height" constant="20" id="ZdY-Rt-j3b"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Turab Hospital, Township." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1pJ-Oh-EHW">
+                                        <rect key="frame" x="28" y="4.5" width="302" height="16.5"/>
+                                        <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="87O-8D-Z6M">
+                                <rect key="frame" x="0.0" y="44" width="330" height="1"/>
+                                <color key="backgroundColor" name="Grey11"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="IFa-Ns-Ail"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="cQs-d3-x3U" secondAttribute="trailing" id="IEd-M2-pj3"/>
+                            <constraint firstItem="cQs-d3-x3U" firstAttribute="leading" secondItem="b34-4h-F0D" secondAttribute="leading" id="JSl-mh-yPh"/>
+                            <constraint firstItem="87O-8D-Z6M" firstAttribute="leading" secondItem="b34-4h-F0D" secondAttribute="leading" id="Kju-8M-NHR"/>
+                            <constraint firstAttribute="bottom" secondItem="87O-8D-Z6M" secondAttribute="bottom" id="Kos-jf-CIx"/>
+                            <constraint firstItem="87O-8D-Z6M" firstAttribute="top" secondItem="cQs-d3-x3U" secondAttribute="bottom" constant="9" id="Yew-VH-btk"/>
+                            <constraint firstAttribute="trailing" secondItem="87O-8D-Z6M" secondAttribute="trailing" id="g3v-zf-RMl"/>
+                            <constraint firstAttribute="height" constant="45" id="rnD-hE-bmt"/>
+                            <constraint firstItem="cQs-d3-x3U" firstAttribute="top" secondItem="b34-4h-F0D" secondAttribute="top" constant="10" id="xYv-rh-WNI"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="b34-4h-F0D" secondAttribute="trailing" constant="21" id="6KG-Xu-z4m"/>
+                    <constraint firstItem="b34-4h-F0D" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="21" id="9ML-s5-vYw"/>
+                    <constraint firstAttribute="bottom" secondItem="b34-4h-F0D" secondAttribute="bottom" id="Zla-mB-emU"/>
+                    <constraint firstItem="b34-4h-F0D" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="npw-mQ-HVN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="dividerView" destination="87O-8D-Z6M" id="KCu-j8-VUq"/>
+                <outlet property="icon" destination="UWL-99-0eH" id="7gN-IJ-QJx"/>
+                <outlet property="iconHeightConstraint" destination="ZdY-Rt-j3b" id="HI6-8t-Agq"/>
+                <outlet property="iconWidthConstraint" destination="I2y-eT-1ni" id="aeb-Ao-JlY"/>
+                <outlet property="title" destination="1pJ-Oh-EHW" id="hrs-rp-EYB"/>
+            </connections>
+            <point key="canvasLocation" x="173.91304347826087" y="110.15625"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_location_pin" width="24.5" height="24.5"/>
+        <namedColor name="Grey11">
+            <color red="0.32899999618530273" green="0.32400000095367432" blue="0.4779999852180481" alpha="0.33000001311302185" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

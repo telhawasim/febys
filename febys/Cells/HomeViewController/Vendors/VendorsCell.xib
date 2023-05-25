@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="VendorsCell" customModule="febys" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="160" height="160"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="160" height="160"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YZX-u5-KbM" userLabel="Content View">
+                        <rect key="frame" x="0.0" y="0.0" width="160" height="160"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Y5f-5r-ZLC">
+                                <rect key="frame" x="12" y="29" width="136" height="102"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="7oo-Y4-TJO">
+                                        <rect key="frame" x="40.5" y="0.0" width="55" height="55"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="55" id="7f6-HK-qDx"/>
+                                            <constraint firstAttribute="width" constant="55" id="YZz-Ei-OT6"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="27.5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="gEP-kY-FGK">
+                                        <rect key="frame" x="36" y="65" width="64.5" height="17"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Vendor" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O4E-Iw-6zb" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="45.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="officialBadge" translatesAutoresizingMaskIntoConstraints="NO" id="IhU-cx-Sfr">
+                                                <rect key="frame" x="49.5" y="1" width="15" height="15"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="15" id="Bgg-0W-u7G"/>
+                                                    <constraint firstAttribute="height" constant="15" id="WAd-IE-5j3"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zic-z3-v8n" customClass="CosmosView" customModule="Cosmos">
+                                        <rect key="frame" x="38" y="92" width="60" height="10"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="3JL-zh-Ydu"/>
+                                            <constraint firstAttribute="height" constant="10" id="QQE-YC-w9N"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="totalStars">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="filledImage" value="RatingStar-Fill"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="starSize">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="emptyImage" value="RatingStar"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Y5f-5r-ZLC" firstAttribute="centerX" secondItem="YZX-u5-KbM" secondAttribute="centerX" id="Cu4-QL-M8a"/>
+                            <constraint firstAttribute="trailing" secondItem="Y5f-5r-ZLC" secondAttribute="trailing" constant="12" id="Koc-gI-7v0"/>
+                            <constraint firstItem="Y5f-5r-ZLC" firstAttribute="top" relation="greaterThanOrEqual" secondItem="YZX-u5-KbM" secondAttribute="top" constant="10" id="RlT-Jd-Og0"/>
+                            <constraint firstItem="Y5f-5r-ZLC" firstAttribute="centerY" secondItem="YZX-u5-KbM" secondAttribute="centerY" id="U4C-MI-Eb7"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Y5f-5r-ZLC" secondAttribute="bottom" constant="10" id="UVh-tr-gk3"/>
+                            <constraint firstItem="Y5f-5r-ZLC" firstAttribute="leading" secondItem="YZX-u5-KbM" secondAttribute="leading" constant="12" id="jYQ-5k-OM8"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="YZX-u5-KbM" secondAttribute="bottom" id="1Sr-nV-Pa3"/>
+                <constraint firstItem="YZX-u5-KbM" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="JJU-g6-1Iq"/>
+                <constraint firstItem="YZX-u5-KbM" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="VDa-U9-lDR"/>
+                <constraint firstAttribute="trailing" secondItem="YZX-u5-KbM" secondAttribute="trailing" id="nM2-ad-O1c"/>
+            </constraints>
+            <size key="customSize" width="160" height="160"/>
+            <connections>
+                <outlet property="officialBadgeImage" destination="IhU-cx-Sfr" id="RKQ-f6-sxZ"/>
+                <outlet property="storeImageView" destination="7oo-Y4-TJO" id="Sa7-YA-isB"/>
+                <outlet property="storeNameLabel" destination="O4E-Iw-6zb" id="gro-Aa-F6N"/>
+                <outlet property="storeRatingView" destination="zic-z3-v8n" id="PbC-BK-7CY"/>
+            </connections>
+            <point key="canvasLocation" x="217.39130434782609" y="146.65178571428569"/>
+        </collectionViewCell>
+    </objects>
+    <designables>
+        <designable name="O4E-Iw-6zb">
+            <size key="intrinsicContentSize" width="45.5" height="17"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="RatingStar" width="10" height="10"/>
+        <image name="RatingStar-Fill" width="10" height="10"/>
+        <image name="officialBadge" width="16" height="16"/>
+        <image name="user" width="171" height="171"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

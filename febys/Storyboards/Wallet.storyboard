@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Wallet View Controller-->
+        <scene sceneID="BCM-w0-XpR">
+            <objects>
+                <viewController storyboardIdentifier="WalletViewController" id="XRl-zB-hx5" customClass="WalletViewController" customModule="febys" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SKb-o3-Jxl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tFY-tf-abw" userLabel="Navigation View">
+                                <rect key="frame" x="0.0" y="44" width="414" height="65"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zvD-bR-eUh" customClass="FebysButton" customModule="febys" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="7.5" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="2qE-T0-vKn"/>
+                                            <constraint firstAttribute="width" constant="50" id="gNd-zO-a00"/>
+                                        </constraints>
+                                        <state key="normal" image="back-arrow"/>
+                                        <connections>
+                                            <action selector="backButtonTapped:" destination="XRl-zB-hx5" eventType="touchUpInside" id="XaQ-Dl-rJQ"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wallet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kdI-I1-pSL" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                        <rect key="frame" x="184.5" y="22.5" width="45.5" height="20"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="5db-Ar-8JF"/>
+                                    <constraint firstItem="kdI-I1-pSL" firstAttribute="centerY" secondItem="tFY-tf-abw" secondAttribute="centerY" id="7oU-jw-cLJ"/>
+                                    <constraint firstItem="zvD-bR-eUh" firstAttribute="leading" secondItem="tFY-tf-abw" secondAttribute="leading" id="CcG-jY-vjD"/>
+                                    <constraint firstItem="zvD-bR-eUh" firstAttribute="centerY" secondItem="tFY-tf-abw" secondAttribute="centerY" id="VOn-fd-5qU"/>
+                                    <constraint firstItem="kdI-I1-pSL" firstAttribute="centerX" secondItem="tFY-tf-abw" secondAttribute="centerX" id="y2i-Rf-3wb"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="NG4-od-vG6">
+                                <rect key="frame" x="0.0" y="109" width="414" height="787"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5dR-U5-IDH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NG4-od-vG6" firstAttribute="top" secondItem="tFY-tf-abw" secondAttribute="bottom" id="Nxx-Y5-G5P"/>
+                            <constraint firstItem="NG4-od-vG6" firstAttribute="leading" secondItem="5dR-U5-IDH" secondAttribute="leading" id="SEn-1o-Yg3"/>
+                            <constraint firstAttribute="trailing" secondItem="tFY-tf-abw" secondAttribute="trailing" id="ST7-hs-94F"/>
+                            <constraint firstItem="tFY-tf-abw" firstAttribute="top" secondItem="5dR-U5-IDH" secondAttribute="top" id="V5B-gl-Nf4"/>
+                            <constraint firstAttribute="bottom" secondItem="NG4-od-vG6" secondAttribute="bottom" id="WZd-90-dqr"/>
+                            <constraint firstItem="tFY-tf-abw" firstAttribute="leading" secondItem="5dR-U5-IDH" secondAttribute="leading" id="aAS-Ct-OrQ"/>
+                            <constraint firstItem="NG4-od-vG6" firstAttribute="trailing" secondItem="5dR-U5-IDH" secondAttribute="trailing" id="wOb-Sh-xdP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="NG4-od-vG6" id="fcm-qb-E1z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EHP-B0-D69" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="375" y="46"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="kdI-I1-pSL">
+            <size key="intrinsicContentSize" width="45.5" height="19.5"/>
+        </designable>
+        <designable name="zvD-bR-eUh">
+            <size key="intrinsicContentSize" width="10.5" height="22"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="back-arrow" width="10.5" height="19"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="160" id="KGk-i7-Jjw" customClass="WalletBallanceHeaderView" customModule="febys" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="442" height="153"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="442" height="153"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QGf-5p-Kun">
+                        <rect key="frame" x="21" y="30" width="400" height="104"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="THWallet" translatesAutoresizingMaskIntoConstraints="NO" id="NLq-0C-eTK">
+                                <rect key="frame" x="30" y="25.5" width="59" height="53"/>
+                                <color key="tintColor" red="0.76862745098039209" green="0.078431372549019607" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="Hoe-Wx-rir"/>
+                                    <constraint firstAttribute="width" constant="59" id="fe6-A8-lJU"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="QRs-0y-j4M">
+                                <rect key="frame" x="102" y="32" width="101.5" height="40"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Balance" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8yI-pl-QWk">
+                                        <rect key="frame" x="0.0" y="0.0" width="101.5" height="16.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GHS 0.00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="div-ZS-78x" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="20.5" width="101.5" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bigRightArrow" translatesAutoresizingMaskIntoConstraints="NO" id="jt4-TS-bkP">
+                                <rect key="frame" x="335" y="40.5" width="34" height="23"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="23" id="0XE-c2-ar9"/>
+                                    <constraint firstAttribute="width" constant="34" id="n8Q-Ny-OK1"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rbK-oO-xI0" customClass="FebysButton" customModule="febys" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="400" height="104"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="104" id="BaR-Ez-BSi"/>
+                            <constraint firstAttribute="trailing" secondItem="jt4-TS-bkP" secondAttribute="trailing" constant="31" id="EfK-yJ-O2c"/>
+                            <constraint firstItem="rbK-oO-xI0" firstAttribute="top" secondItem="QGf-5p-Kun" secondAttribute="top" id="Erm-bm-2oK"/>
+                            <constraint firstItem="QRs-0y-j4M" firstAttribute="leading" secondItem="NLq-0C-eTK" secondAttribute="trailing" constant="13" id="QCT-bO-A20"/>
+                            <constraint firstAttribute="trailing" secondItem="rbK-oO-xI0" secondAttribute="trailing" id="QaP-el-IYr"/>
+                            <constraint firstItem="QRs-0y-j4M" firstAttribute="centerY" secondItem="NLq-0C-eTK" secondAttribute="centerY" id="Xko-Qk-J1A"/>
+                            <constraint firstItem="jt4-TS-bkP" firstAttribute="centerY" secondItem="NLq-0C-eTK" secondAttribute="centerY" id="Xsf-Mj-5ZC"/>
+                            <constraint firstAttribute="bottom" secondItem="rbK-oO-xI0" secondAttribute="bottom" id="pc0-jg-0Zy"/>
+                            <constraint firstItem="rbK-oO-xI0" firstAttribute="leading" secondItem="QGf-5p-Kun" secondAttribute="leading" id="rkc-5y-uSF"/>
+                            <constraint firstItem="NLq-0C-eTK" firstAttribute="leading" secondItem="QGf-5p-Kun" secondAttribute="leading" constant="30" id="vsc-oy-WMr"/>
+                            <constraint firstItem="NLq-0C-eTK" firstAttribute="centerY" secondItem="QGf-5p-Kun" secondAttribute="centerY" id="xFs-V6-3Y8"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="QGf-5p-Kun" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="21" id="D1W-kE-S5f"/>
+                    <constraint firstItem="QGf-5p-Kun" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="30" id="Rdy-1U-Vh6"/>
+                    <constraint firstAttribute="bottom" secondItem="QGf-5p-Kun" secondAttribute="bottom" priority="999" id="oLk-qq-1si"/>
+                    <constraint firstAttribute="trailing" secondItem="QGf-5p-Kun" secondAttribute="trailing" constant="21" id="qxe-Bc-eoE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cellClickButton" destination="rbK-oO-xI0" id="l2P-4m-raD"/>
+                <outlet property="walletAmount" destination="div-ZS-78x" id="cqH-yw-APa"/>
+            </connections>
+            <point key="canvasLocation" x="226.08695652173915" y="136.94196428571428"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="div-ZS-78x">
+            <size key="intrinsicContentSize" width="70" height="19.5"/>
+        </designable>
+        <designable name="rbK-oO-xI0">
+            <size key="intrinsicContentSize" width="46" height="30"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="THWallet" width="58.5" height="52.5"/>
+        <image name="bigRightArrow" width="34.5" height="23"/>
+    </resources>
+</document>

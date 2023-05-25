@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ShoppingCartHeader" id="gTV-IL-0wX" customClass="ShoppingCartHeader" customModule="febys" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="369" height="55"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="369" height="55"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gb2-Xo-JAJ" userLabel="Content View">
+                        <rect key="frame" x="0.0" y="0.0" width="369" height="55"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CJ3-Qh-Gsb">
+                                <rect key="frame" x="15" y="0.0" width="339" height="55"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Lto-e6-tYS">
+                                        <rect key="frame" x="0.0" y="10.5" width="339" height="34"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X2B-nS-6Fs">
+                                                <rect key="frame" x="0.0" y="0.0" width="243" height="34"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="PIg-ty-6Jq">
+                                                        <rect key="frame" x="0.0" y="0.0" width="243" height="34"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="Dtg-MJ-481">
+                                                                <rect key="frame" x="0.0" y="0.0" width="34" height="34"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="34" id="jbt-ys-qj2"/>
+                                                                    <constraint firstAttribute="height" constant="34" id="nQE-3V-Ef2"/>
+                                                                </constraints>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                        <real key="value" value="17"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </imageView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="zEL-t5-tCW">
+                                                                <rect key="frame" x="40" y="0.0" width="203" height="34"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Deal-Train" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vu2-tb-XMt" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="203" height="17"/>
+                                                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Official" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g2U-Kg-O2A" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="18" width="203" height="16"/>
+                                                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                                                        <color key="textColor" red="0.76862745099999996" green="0.078431372550000003" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BEa-rQ-dUs" customClass="FebysButton" customModule="febys" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="243" height="34"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="PIg-ty-6Jq" secondAttribute="trailing" id="5OP-F0-o67"/>
+                                                    <constraint firstItem="BEa-rQ-dUs" firstAttribute="centerX" secondItem="PIg-ty-6Jq" secondAttribute="centerX" id="GDO-tX-Maa"/>
+                                                    <constraint firstItem="BEa-rQ-dUs" firstAttribute="trailing" secondItem="PIg-ty-6Jq" secondAttribute="trailing" id="Qcu-ov-hjI"/>
+                                                    <constraint firstItem="PIg-ty-6Jq" firstAttribute="top" secondItem="X2B-nS-6Fs" secondAttribute="top" id="cPV-f9-aGO"/>
+                                                    <constraint firstAttribute="bottom" secondItem="PIg-ty-6Jq" secondAttribute="bottom" id="diA-K6-nre"/>
+                                                    <constraint firstItem="BEa-rQ-dUs" firstAttribute="top" secondItem="PIg-ty-6Jq" secondAttribute="top" id="f4a-7t-gCb"/>
+                                                    <constraint firstItem="BEa-rQ-dUs" firstAttribute="centerY" secondItem="PIg-ty-6Jq" secondAttribute="centerY" id="iUb-7s-Ffb"/>
+                                                    <constraint firstItem="BEa-rQ-dUs" firstAttribute="leading" secondItem="PIg-ty-6Jq" secondAttribute="leading" id="k3s-Up-6WA"/>
+                                                    <constraint firstItem="BEa-rQ-dUs" firstAttribute="bottom" secondItem="PIg-ty-6Jq" secondAttribute="bottom" id="vcb-NQ-Vdm"/>
+                                                    <constraint firstItem="PIg-ty-6Jq" firstAttribute="leading" secondItem="X2B-nS-6Fs" secondAttribute="leading" id="ySb-aB-PiC"/>
+                                                </constraints>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iIk-HI-GrX" customClass="FebysButton" customModule="febys" customModuleProvider="target">
+                                                <rect key="frame" x="253" y="0.0" width="86" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="34" id="c47-gM-01X"/>
+                                                    <constraint firstAttribute="width" constant="86" id="k5U-ew-6BO"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                                <inset key="contentEdgeInsets" minX="21" minY="0.0" maxX="21" maxY="0.0"/>
+                                                <state key="normal" title="Cancel">
+                                                    <color key="titleColor" name="BlackMainColor"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="MildGreyColor"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Lto-e6-tYS" firstAttribute="centerY" secondItem="CJ3-Qh-Gsb" secondAttribute="centerY" id="934-Qp-DYv"/>
+                                    <constraint firstItem="Lto-e6-tYS" firstAttribute="leading" secondItem="CJ3-Qh-Gsb" secondAttribute="leading" id="dfq-cC-JF0"/>
+                                    <constraint firstAttribute="trailing" secondItem="Lto-e6-tYS" secondAttribute="trailing" id="kww-1c-uMO"/>
+                                    <constraint firstAttribute="height" constant="55" id="y9q-aS-Ds5"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" name="LightGrayColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="CJ3-Qh-Gsb" secondAttribute="bottom" id="CV5-I5-g35"/>
+                            <constraint firstItem="CJ3-Qh-Gsb" firstAttribute="leading" secondItem="Gb2-Xo-JAJ" secondAttribute="leading" constant="15" id="DLZ-ff-8o4"/>
+                            <constraint firstAttribute="trailing" secondItem="CJ3-Qh-Gsb" secondAttribute="trailing" constant="15" id="Hku-p4-3ox"/>
+                            <constraint firstItem="CJ3-Qh-Gsb" firstAttribute="top" secondItem="Gb2-Xo-JAJ" secondAttribute="top" id="Uek-iC-6Sx"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Gb2-Xo-JAJ" secondAttribute="trailing" id="7Jj-m0-an1"/>
+                <constraint firstItem="Gb2-Xo-JAJ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="AMM-l2-Ef9"/>
+                <constraint firstAttribute="bottom" secondItem="Gb2-Xo-JAJ" secondAttribute="bottom" id="TBq-wj-qwG"/>
+                <constraint firstItem="Gb2-Xo-JAJ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="w1H-ZO-qa5"/>
+            </constraints>
+            <size key="customSize" width="369" height="55"/>
+            <connections>
+                <outlet property="cancelButton" destination="iIk-HI-GrX" id="480-zA-H0I"/>
+                <outlet property="headerImage" destination="Dtg-MJ-481" id="7lu-wb-Iey"/>
+                <outlet property="headerRole" destination="g2U-Kg-O2A" id="Qqq-9s-BT5"/>
+                <outlet property="headerTitle" destination="Vu2-tb-XMt" id="xza-WM-26a"/>
+                <outlet property="leadingConstraint" destination="DLZ-ff-8o4" id="7uC-SL-vkl"/>
+                <outlet property="leadingPadding" destination="AMM-l2-Ef9" id="gLe-KC-mCs"/>
+                <outlet property="trailingConstraint" destination="Hku-p4-3ox" id="988-K1-7tI"/>
+                <outlet property="trailingPadding" destination="7Jj-m0-an1" id="9ti-MM-GZR"/>
+                <outlet property="vendorDetailButton" destination="BEa-rQ-dUs" id="Iog-aL-Jf6"/>
+            </connections>
+            <point key="canvasLocation" x="294.92753623188406" y="47.209821428571423"/>
+        </collectionViewCell>
+    </objects>
+    <designables>
+        <designable name="BEa-rQ-dUs">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+        <designable name="Vu2-tb-XMt">
+            <size key="intrinsicContentSize" width="65" height="16"/>
+        </designable>
+        <designable name="g2U-Kg-O2A">
+            <size key="intrinsicContentSize" width="43" height="16"/>
+        </designable>
+        <designable name="iIk-HI-GrX">
+            <size key="intrinsicContentSize" width="86" height="16"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="user" width="171" height="171"/>
+        <namedColor name="BlackMainColor">
+            <color red="0.12941176470588237" green="0.12941176470588237" blue="0.12941176470588237" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="LightGrayColor">
+            <color red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="MildGreyColor">
+            <color red="0.88235294117647056" green="0.89803921568627454" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

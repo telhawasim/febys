@@ -1,0 +1,30 @@
+//
+//  DevConfig.xcconfig
+//  febys
+//
+//  Created by Waseem Nasir on 25/06/2021.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+//MARK: FEBYS URLS
+base_url = https:\/\/api.qa.febys.com
+base_url_config = https:\/\/api.qa.febys.com/config
+base_url_auth = https:\/\/auth.qa.febys.com/auth
+base_url_search = https:\/\/search.qa.febys.com/search
+
+//MARK: KEYCLOAK
+client_secret = bdf191d9-0f32-4215-8852-ec9a624eab39
+
+//MARK: GOOGLE
+google_api = AIzaSyDWvhH1t_2jrUCchIc2W1vYP-CA60JGWY8
+
+client_id = 912540354085-ialuj77cgvsvuna346i4unmubgb9mqsa.apps.googleusercontent.com
+reversed_client_id = com.googleusercontent.apps.912540354085-ialuj77cgvsvuna346i4unmubgb9mqsa
+
+//MARK: ZENDESK
+zendesk_url = https:\/\/febys.zendesk.com
+zendesk_account_key = 9bdmD4Lfc1DndoNe0YnyLWXnl2vZ7x3R
+zendesk_app_id = 731a2fbda9e00bcc623fb9418e640728f727b0bf834fa6ef
+zendesk_client_key = mobile_sdk_client_55aa287fad5baebe4717

@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Filters View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="FiltersViewController" hidesBottomBarWhenPushed="YES" id="Y6W-OH-hqX" customClass="FiltersViewController" customModule="febys" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pmd-ow-uuT" userLabel="NavigationView">
+                                <rect key="frame" x="0.0" y="44" width="414" height="65"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sql-ga-95T" customClass="FebysButton" customModule="febys" customModuleProvider="target">
+                                        <rect key="frame" x="12" y="11.5" width="41" height="42"/>
+                                        <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                        <state key="normal" image="cart delete"/>
+                                        <connections>
+                                            <action selector="backButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="zFU-TS-7PT"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Refine" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4W7-EO-fj3" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                        <rect key="frame" x="186.5" y="24" width="41.5" height="17"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e2w-H9-t48" customClass="FebysButton" customModule="febys" customModuleProvider="target">
+                                        <rect key="frame" x="333" y="19.5" width="60" height="26"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="luv-5n-98j"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Clear all">
+                                            <color key="titleColor" name="BlackMainColor"/>
+                                        </state>
+                                        <state key="selected">
+                                            <color key="titleColor" name="BlackMainColor"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="4W7-EO-fj3" firstAttribute="centerY" secondItem="pmd-ow-uuT" secondAttribute="centerY" id="1OF-TB-9t2"/>
+                                    <constraint firstItem="Sql-ga-95T" firstAttribute="leading" secondItem="pmd-ow-uuT" secondAttribute="leading" constant="12" id="5W5-aE-WMG"/>
+                                    <constraint firstItem="Sql-ga-95T" firstAttribute="centerY" secondItem="pmd-ow-uuT" secondAttribute="centerY" id="Acx-t5-8UL"/>
+                                    <constraint firstAttribute="height" constant="65" id="Hsy-Cs-XbX"/>
+                                    <constraint firstItem="e2w-H9-t48" firstAttribute="centerY" secondItem="pmd-ow-uuT" secondAttribute="centerY" id="OMD-G5-eGB"/>
+                                    <constraint firstItem="4W7-EO-fj3" firstAttribute="centerX" secondItem="pmd-ow-uuT" secondAttribute="centerX" id="n64-xj-AoO"/>
+                                    <constraint firstAttribute="trailing" secondItem="e2w-H9-t48" secondAttribute="trailing" constant="21" id="qwL-ED-pbr"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="PIh-4e-hAa">
+                                <rect key="frame" x="0.0" y="109" width="414" height="787"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lri-NH-6lO" customClass="FebysButton" customModule="febys" customModuleProvider="target">
+                                <rect key="frame" x="21" y="794" width="372" height="60"/>
+                                <color key="backgroundColor" name="BlackMainColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="gq7-tl-fEe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="Apply Now">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pmd-ow-uuT" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="32B-iY-SvD"/>
+                            <constraint firstItem="PIh-4e-hAa" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="3xu-8f-j7z"/>
+                            <constraint firstAttribute="bottom" secondItem="PIh-4e-hAa" secondAttribute="bottom" id="AIk-YY-lRD"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="lri-NH-6lO" secondAttribute="bottom" constant="8" id="AWl-vr-7hq"/>
+                            <constraint firstItem="pmd-ow-uuT" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="Ggh-YN-rgg"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="lri-NH-6lO" secondAttribute="trailing" constant="21" id="Ku5-RO-gON"/>
+                            <constraint firstItem="pmd-ow-uuT" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Vdu-8I-AOt"/>
+                            <constraint firstItem="pmd-ow-uuT" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="WLK-NX-8Iq"/>
+                            <constraint firstItem="PIh-4e-hAa" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="b6v-eb-Aac"/>
+                            <constraint firstItem="lri-NH-6lO" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="21" id="bZY-sJ-Zot"/>
+                            <constraint firstItem="PIh-4e-hAa" firstAttribute="top" secondItem="pmd-ow-uuT" secondAttribute="bottom" id="ghe-Kf-Rzm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="applyNowButton" destination="lri-NH-6lO" id="I6B-Qs-Grn"/>
+                        <outlet property="clearAllButton" destination="e2w-H9-t48" id="cwN-mi-hh3"/>
+                        <outlet property="tableView" destination="PIh-4e-hAa" id="CRB-Mr-9IE"/>
+                        <outlet property="titleLabel" destination="4W7-EO-fj3" id="mTj-g9-Md0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="111.59420289855073" y="37.5"/>
+        </scene>
+        <!--Price Range View Controller-->
+        <scene sceneID="QII-Co-Lbb">
+            <objects>
+                <viewController storyboardIdentifier="PriceRangeViewController" id="oU3-Pb-ROd" customClass="PriceRangeViewController" customModule="febys" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EiG-or-Slv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4O9-BX-PUg" userLabel="NavigationView">
+                                <rect key="frame" x="0.0" y="44" width="414" height="65"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3VK-D2-tYw" customClass="FebysButton" customModule="febys" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="7.5" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="LIo-EB-YxP"/>
+                                            <constraint firstAttribute="width" constant="50" id="NTo-gz-eWX"/>
+                                        </constraints>
+                                        <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                        <state key="normal" image="back-arrow"/>
+                                        <connections>
+                                            <action selector="backButtonTapped:" destination="oU3-Pb-ROd" eventType="touchUpInside" id="8Dh-ds-DTF"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price Range" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kva-ma-t7l" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                        <rect key="frame" x="167.5" y="24" width="79" height="17"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s1U-dX-uGm" customClass="FebysButton" customModule="febys" customModuleProvider="target">
+                                        <rect key="frame" x="333" y="19.5" width="60" height="26"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="QEp-eD-HRS"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Clear">
+                                            <color key="titleColor" name="BlackMainColor"/>
+                                        </state>
+                                        <state key="selected">
+                                            <color key="titleColor" name="BlackMainColor"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="Bst-dO-XTg"/>
+                                    <constraint firstItem="Kva-ma-t7l" firstAttribute="centerY" secondItem="4O9-BX-PUg" secondAttribute="centerY" id="C4U-HE-xpq"/>
+                                    <constraint firstItem="3VK-D2-tYw" firstAttribute="leading" secondItem="4O9-BX-PUg" secondAttribute="leading" id="Qh0-I5-ojD"/>
+                                    <constraint firstItem="Kva-ma-t7l" firstAttribute="centerX" secondItem="4O9-BX-PUg" secondAttribute="centerX" id="fDo-6d-G65"/>
+                                    <constraint firstItem="s1U-dX-uGm" firstAttribute="centerY" secondItem="4O9-BX-PUg" secondAttribute="centerY" id="i6A-TR-3Aj"/>
+                                    <constraint firstAttribute="trailing" secondItem="s1U-dX-uGm" secondAttribute="trailing" constant="21" id="sbd-iI-dmj"/>
+                                    <constraint firstItem="3VK-D2-tYw" firstAttribute="centerY" secondItem="4O9-BX-PUg" secondAttribute="centerY" id="v6n-Bj-2Do"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yh6-68-ITl" customClass="FebysButton" customModule="febys" customModuleProvider="target">
+                                <rect key="frame" x="21" y="794" width="372" height="60"/>
+                                <color key="backgroundColor" name="BlackMainColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="RbX-Ao-Iqp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                                <state key="normal" title="Apply Now">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="JT9-yE-z1p">
+                                <rect key="frame" x="21" y="133" width="372" height="55"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Nug-2l-J8k">
+                                        <rect key="frame" x="0.0" y="0.0" width="178.5" height="55"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLO-Ap-4xo" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="38.5" height="55"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Min" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e6w-pm-mQS" customClass="FebysTextField" customModule="febys" customModuleProvider="target">
+                                                <rect key="frame" x="53.5" y="0.0" width="125" height="55"/>
+                                                <color key="tintColor" name="BlackMainColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="55" id="DkC-Tm-ipO"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="ASCIICapableNumberPad"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="MildGreyColor"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                                                        <real key="value" value="12"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
+                                                        <real key="value" value="12"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="kos-Ga-XYo">
+                                        <rect key="frame" x="193.5" y="0.0" width="178.5" height="55"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K0R-j2-NnV" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="17.5" height="55"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Max" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vdx-FM-eff" customClass="FebysTextField" customModule="febys" customModuleProvider="target">
+                                                <rect key="frame" x="32.5" y="0.0" width="146" height="55"/>
+                                                <color key="tintColor" name="BlackMainColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="55" id="cd1-LB-afQ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="ASCIICapableNumberPad"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="MildGreyColor"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                                                        <real key="value" value="12"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
+                                                        <real key="value" value="12"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ckq-TR-ddI"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JT9-yE-z1p" firstAttribute="top" secondItem="4O9-BX-PUg" secondAttribute="bottom" constant="24" id="Ba0-Qj-wfB"/>
+                            <constraint firstItem="4O9-BX-PUg" firstAttribute="top" secondItem="Ckq-TR-ddI" secondAttribute="top" id="IRT-eL-dhr"/>
+                            <constraint firstItem="yh6-68-ITl" firstAttribute="leading" secondItem="EiG-or-Slv" secondAttribute="leading" constant="21" id="NJ7-y6-zu6"/>
+                            <constraint firstItem="4O9-BX-PUg" firstAttribute="leading" secondItem="EiG-or-Slv" secondAttribute="leading" id="OBi-Cn-mft"/>
+                            <constraint firstItem="Ckq-TR-ddI" firstAttribute="bottom" secondItem="yh6-68-ITl" secondAttribute="bottom" constant="8" id="RQ9-sP-Rcx"/>
+                            <constraint firstItem="Ckq-TR-ddI" firstAttribute="trailing" secondItem="yh6-68-ITl" secondAttribute="trailing" constant="21" id="Vhr-Nj-aGr"/>
+                            <constraint firstItem="Ckq-TR-ddI" firstAttribute="trailing" secondItem="4O9-BX-PUg" secondAttribute="trailing" id="aWK-Bc-CJj"/>
+                            <constraint firstItem="JT9-yE-z1p" firstAttribute="leading" secondItem="Ckq-TR-ddI" secondAttribute="leading" constant="21" id="cq3-M5-xdk"/>
+                            <constraint firstItem="Ckq-TR-ddI" firstAttribute="trailing" secondItem="JT9-yE-z1p" secondAttribute="trailing" constant="21" id="fFA-R2-ete"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="applyNowButton" destination="yh6-68-ITl" id="QlA-5x-PFt"/>
+                        <outlet property="clearButton" destination="s1U-dX-uGm" id="rjP-BV-OFk"/>
+                        <outlet property="maxPriceField" destination="Vdx-FM-eff" id="QuJ-2K-dyq"/>
+                        <outlet property="minPriceField" destination="e6w-pm-mQS" id="J40-vo-TYO"/>
+                        <outletCollection property="currencyLabels" destination="K0R-j2-NnV" collectionClass="NSMutableArray" id="qeI-gp-3XZ"/>
+                        <outletCollection property="currencyLabels" destination="gLO-Ap-4xo" collectionClass="NSMutableArray" id="Llu-Ca-8ia"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="erO-Xz-89L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="843" y="38"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="3VK-D2-tYw">
+            <size key="intrinsicContentSize" width="30.5" height="42"/>
+        </designable>
+        <designable name="4W7-EO-fj3">
+            <size key="intrinsicContentSize" width="41.5" height="17"/>
+        </designable>
+        <designable name="K0R-j2-NnV">
+            <size key="intrinsicContentSize" width="17.5" height="19.5"/>
+        </designable>
+        <designable name="Kva-ma-t7l">
+            <size key="intrinsicContentSize" width="79" height="17"/>
+        </designable>
+        <designable name="Sql-ga-95T">
+            <size key="intrinsicContentSize" width="41" height="42"/>
+        </designable>
+        <designable name="Vdx-FM-eff">
+            <size key="intrinsicContentSize" width="51" height="18.5"/>
+        </designable>
+        <designable name="e2w-H9-t48">
+            <size key="intrinsicContentSize" width="44" height="26"/>
+        </designable>
+        <designable name="e6w-pm-mQS">
+            <size key="intrinsicContentSize" width="47.5" height="18.5"/>
+        </designable>
+        <designable name="gLO-Ap-4xo">
+            <size key="intrinsicContentSize" width="38.5" height="19.5"/>
+        </designable>
+        <designable name="lri-NH-6lO">
+            <size key="intrinsicContentSize" width="91" height="34"/>
+        </designable>
+        <designable name="s1U-dX-uGm">
+            <size key="intrinsicContentSize" width="30" height="26"/>
+        </designable>
+        <designable name="yh6-68-ITl">
+            <size key="intrinsicContentSize" width="91" height="34"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="back-arrow" width="10.5" height="19"/>
+        <image name="cart delete" width="21" height="21"/>
+        <namedColor name="BlackMainColor">
+            <color red="0.12941176470588237" green="0.12941176470588237" blue="0.12941176470588237" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="MildGreyColor">
+            <color red="0.88235294117647056" green="0.89803921568627454" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

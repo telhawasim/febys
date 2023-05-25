@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ShoppingCartFooter" customModule="febys" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="430" height="142"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="LI5-0Q-0Sy">
+                    <rect key="frame" x="21" y="67" width="388" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KmW-BB-X55" customClass="FebysButton" customModule="febys" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="388" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="tcb-9o-W3j"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                            <state key="normal" title="Download PDF">
+                                <color key="titleColor" name="BlackMainColor"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="6"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" name="BlackMainColor"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="LI5-0Q-0Sy" secondAttribute="bottom" constant="25" id="6Yb-nc-jbT"/>
+                <constraint firstItem="LI5-0Q-0Sy" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" priority="250" constant="10" id="ItE-OK-N4o"/>
+                <constraint firstAttribute="trailing" secondItem="LI5-0Q-0Sy" secondAttribute="trailing" constant="21" id="VNU-cI-uUj"/>
+                <constraint firstItem="LI5-0Q-0Sy" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="21" id="iGP-G0-C2w"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="downloadPDFButton" destination="KmW-BB-X55" id="Ep1-4N-skg"/>
+            </connections>
+            <point key="canvasLocation" x="39" y="-222"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="KmW-BB-X55">
+            <size key="intrinsicContentSize" width="121" height="33"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="BlackMainColor">
+            <color red="0.12941176470588237" green="0.12941176470588237" blue="0.12941176470588237" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

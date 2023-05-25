@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="243" id="KGk-i7-Jjw" customClass="WalletTableViewHeaderView" customModule="febys" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="202"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="202"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="At6-IF-BPM">
+                        <rect key="frame" x="21" y="0.0" width="372" height="202"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WalletBG" translatesAutoresizingMaskIntoConstraints="NO" id="DfL-fe-eAm">
+                                <rect key="frame" x="0.0" y="0.0" width="372" height="202"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="Xaj-3X-g7d">
+                                <rect key="frame" x="22" y="25" width="328" height="152"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="CIq-g9-yrW">
+                                        <rect key="frame" x="0.0" y="0.0" width="328" height="53"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="FB7-VZ-dOO">
+                                                <rect key="frame" x="0.0" y="6.5" width="105" height="40.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Current Balance" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="twd-6C-Pbi">
+                                                        <rect key="frame" x="0.0" y="0.0" width="105" height="17"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GHS 0.00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rp4-qL-nyR" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="21" width="105" height="19.5"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="THWallet" translatesAutoresizingMaskIntoConstraints="NO" id="fbZ-rV-j62">
+                                                <rect key="frame" x="269" y="0.0" width="59" height="53"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="59" id="7Ez-si-Xpd"/>
+                                                    <constraint firstAttribute="height" constant="53" id="xBS-ts-ZLB"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="al5-ta-UxP">
+                                        <rect key="frame" x="0.0" y="114" width="328" height="38"/>
+                                        <subviews>
+                                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="mp7-SL-PFh">
+                                                <rect key="frame" x="0.0" y="0.0" width="200" height="38"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HkI-jd-X3i" customClass="FebysButton" customModule="febys" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="94" height="38"/>
+                                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="38" id="5aM-K3-NwE"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
+                                                        <color key="tintColor" name="BlackMainColor"/>
+                                                        <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Withdraw"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="6"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fj6-4f-HRm" customClass="FebysButton" customModule="febys" customModuleProvider="target">
+                                                        <rect key="frame" x="106" y="0.0" width="94" height="38"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="38" id="UCI-SM-dCc"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
+                                                        <color key="tintColor" name="BlackMainColor"/>
+                                                        <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Top-Up">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="6"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="mp7-SL-PFh" secondAttribute="bottom" id="bWy-0b-5VT"/>
+                                            <constraint firstItem="mp7-SL-PFh" firstAttribute="top" secondItem="al5-ta-UxP" secondAttribute="top" id="hVw-0g-9bp"/>
+                                            <constraint firstItem="mp7-SL-PFh" firstAttribute="leading" secondItem="al5-ta-UxP" secondAttribute="leading" id="ubd-dN-Ojg"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.76862745098039209" green="0.078431372549019607" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Xaj-3X-g7d" firstAttribute="leading" secondItem="At6-IF-BPM" secondAttribute="leading" constant="22" id="AZR-Uw-Rea"/>
+                            <constraint firstAttribute="trailing" secondItem="DfL-fe-eAm" secondAttribute="trailing" id="CRH-MI-hMC"/>
+                            <constraint firstAttribute="trailing" secondItem="Xaj-3X-g7d" secondAttribute="trailing" constant="22" id="HdL-Ma-8aE"/>
+                            <constraint firstAttribute="bottom" secondItem="Xaj-3X-g7d" secondAttribute="bottom" constant="25" id="Q2D-Vk-rBU"/>
+                            <constraint firstItem="Xaj-3X-g7d" firstAttribute="top" secondItem="At6-IF-BPM" secondAttribute="top" constant="25" id="sh7-Bi-NXa"/>
+                            <constraint firstItem="DfL-fe-eAm" firstAttribute="leading" secondItem="At6-IF-BPM" secondAttribute="leading" id="tK3-bq-tDv"/>
+                            <constraint firstAttribute="bottom" secondItem="DfL-fe-eAm" secondAttribute="bottom" id="ufh-i6-EWy"/>
+                            <constraint firstItem="DfL-fe-eAm" firstAttribute="top" secondItem="At6-IF-BPM" secondAttribute="top" id="w8c-7J-1Zo"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="At6-IF-BPM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="2b0-2A-rYc"/>
+                    <constraint firstAttribute="bottom" secondItem="At6-IF-BPM" secondAttribute="bottom" priority="999" id="D0T-77-r4w"/>
+                    <constraint firstItem="At6-IF-BPM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="21" id="Kgg-xe-bVi"/>
+                    <constraint firstAttribute="trailing" secondItem="At6-IF-BPM" secondAttribute="trailing" constant="21" id="X5b-2Z-saW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="topUpButton" destination="fj6-4f-HRm" id="mae-PF-Lw8"/>
+                <outlet property="walletBalance" destination="rp4-qL-nyR" id="2CO-9V-Z6B"/>
+                <outlet property="withdrawButton" destination="HkI-jd-X3i" id="0i4-A7-HLd"/>
+            </connections>
+            <point key="canvasLocation" x="302.89855072463769" y="132.58928571428572"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="HkI-jd-X3i">
+            <size key="intrinsicContentSize" width="94" height="17"/>
+        </designable>
+        <designable name="fj6-4f-HRm">
+            <size key="intrinsicContentSize" width="79" height="17"/>
+        </designable>
+        <designable name="rp4-qL-nyR">
+            <size key="intrinsicContentSize" width="70" height="19.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="THWallet" width="58.5" height="52.5"/>
+        <image name="WalletBG" width="373" height="192"/>
+        <namedColor name="BlackMainColor">
+            <color red="0.12941176470588237" green="0.12941176470588237" blue="0.12941176470588237" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

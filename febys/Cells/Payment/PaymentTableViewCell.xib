@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="143" id="KGk-i7-Jjw" customClass="PaymentTableViewCell" customModule="febys" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="401" height="128"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="401" height="128"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Alm-F2-a8p">
+                        <rect key="frame" x="21" y="0.0" width="359" height="110"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="foa-bi-kGn">
+                                <rect key="frame" x="20" y="17.5" width="319" height="75.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wallet-icon" translatesAutoresizingMaskIntoConstraints="NO" id="icR-fg-lI6">
+                                        <rect key="frame" x="0.0" y="16.5" width="42" height="42"/>
+                                        <color key="tintColor" name="RedMainColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="42" id="ELU-cG-UCu"/>
+                                            <constraint firstAttribute="width" constant="42" id="Fzw-xS-D8P"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="7gr-Zl-sgU">
+                                        <rect key="frame" x="57" y="0.0" width="212" height="75.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wallet " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iqy-Jv-m86" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="212" height="18"/>
+                                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="16"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USD 100 avaliable" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j0u-Pb-cFs" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="22" width="212" height="18"/>
+                                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="16"/>
+                                                <color key="textColor" name="RedMainColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F27-yf-NRN" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="44" width="212" height="31.5"/>
+                                                <string key="text">2% + $1.0 Processing fees will 
+be charged</string>
+                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                                <color key="textColor" name="GrayMainColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b8G-BG-jQT">
+                                        <rect key="frame" x="284" y="20" width="35" height="35"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="green-tick" translatesAutoresizingMaskIntoConstraints="NO" id="b0J-2r-yVQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="KBK-FJ-2Hs"/>
+                                                    <constraint firstAttribute="width" constant="35" id="lOM-6g-tsV"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="b0J-2r-yVQ" secondAttribute="trailing" id="0Kp-vE-G8g"/>
+                                            <constraint firstItem="b0J-2r-yVQ" firstAttribute="leading" secondItem="b8G-BG-jQT" secondAttribute="leading" id="Dfs-uN-hLp"/>
+                                            <constraint firstAttribute="bottom" secondItem="b0J-2r-yVQ" secondAttribute="bottom" id="LjN-W6-dui"/>
+                                            <constraint firstItem="b0J-2r-yVQ" firstAttribute="top" secondItem="b8G-BG-jQT" secondAttribute="top" id="yGS-r9-Jek"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="foa-bi-kGn" firstAttribute="centerY" secondItem="Alm-F2-a8p" secondAttribute="centerY" id="3TO-B1-zV7"/>
+                            <constraint firstAttribute="height" constant="110" id="4F7-Ek-09O"/>
+                            <constraint firstItem="foa-bi-kGn" firstAttribute="leading" secondItem="Alm-F2-a8p" secondAttribute="leading" constant="20" id="D7a-Ew-AgU"/>
+                            <constraint firstAttribute="trailing" secondItem="foa-bi-kGn" secondAttribute="trailing" constant="20" id="G3D-Ba-Qba"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" name="MildGreyColor"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Alm-F2-a8p" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="21" id="3rr-sZ-Zdq"/>
+                    <constraint firstItem="Alm-F2-a8p" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="HMl-Yb-Fal"/>
+                    <constraint firstAttribute="bottom" secondItem="Alm-F2-a8p" secondAttribute="bottom" constant="20" id="fgO-Kf-mY1"/>
+                    <constraint firstAttribute="trailing" secondItem="Alm-F2-a8p" secondAttribute="trailing" constant="21" id="zNg-Jf-C4y"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="mainView" destination="Alm-F2-a8p" id="dEW-Ey-wtL"/>
+                <outlet property="paymentAmountLabel" destination="j0u-Pb-cFs" id="0ol-jg-09l"/>
+                <outlet property="paymentFeeLabel" destination="F27-yf-NRN" id="25a-wy-la4"/>
+                <outlet property="paymentImageView" destination="icR-fg-lI6" id="Ldp-h2-HhR"/>
+                <outlet property="paymentNameLabel" destination="iqy-Jv-m86" id="CD3-Ah-NID"/>
+                <outlet property="selectedImageView" destination="b0J-2r-yVQ" id="9fn-Kl-GwH"/>
+            </connections>
+            <point key="canvasLocation" x="154.34782608695653" y="108.48214285714285"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="F27-yf-NRN">
+            <size key="intrinsicContentSize" width="194.5" height="31.5"/>
+        </designable>
+        <designable name="iqy-Jv-m86">
+            <size key="intrinsicContentSize" width="51" height="18"/>
+        </designable>
+        <designable name="j0u-Pb-cFs">
+            <size key="intrinsicContentSize" width="137" height="18"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="green-tick" width="36" height="36"/>
+        <image name="wallet-icon" width="44" height="38"/>
+        <namedColor name="GrayMainColor">
+            <color red="0.58823529411764708" green="0.58823529411764708" blue="0.58823529411764708" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="MildGreyColor">
+            <color red="0.88235294117647056" green="0.89803921568627454" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="RedMainColor">
+            <color red="0.7686274509803922" green="0.074509803921568626" blue="0.16078431372549021" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

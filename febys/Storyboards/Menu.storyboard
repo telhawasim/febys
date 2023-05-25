@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Menu-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="MenuViewController" id="Y6W-OH-hqX" customClass="MenuViewController" customModule="febys" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pCE-KF-aHY">
+                                <rect key="frame" x="0.0" y="134" width="414" height="679"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Y6W-OH-hqX" id="lSg-Pb-9dH"/>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="wfZ-sX-1d0"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="laP-LW-ded">
+                                <rect key="frame" x="0.0" y="44" width="414" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menu" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A4c-Pk-1yh" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                        <rect key="frame" x="21" y="21" width="83" height="38"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="32"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="A4c-Pk-1yh" firstAttribute="leading" secondItem="laP-LW-ded" secondAttribute="leading" constant="21" id="0MC-eV-96g"/>
+                                    <constraint firstItem="A4c-Pk-1yh" firstAttribute="centerY" secondItem="laP-LW-ded" secondAttribute="centerY" id="5KX-w8-tIm"/>
+                                    <constraint firstAttribute="height" constant="80" id="LU0-rB-TNF"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pCE-KF-aHY" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="C55-as-oae"/>
+                            <constraint firstItem="pCE-KF-aHY" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="FTG-vo-r4A"/>
+                            <constraint firstItem="laP-LW-ded" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="Fik-E9-Upa"/>
+                            <constraint firstItem="laP-LW-ded" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="f0K-Ct-em2"/>
+                            <constraint firstItem="pCE-KF-aHY" firstAttribute="top" secondItem="laP-LW-ded" secondAttribute="bottom" constant="10" id="nAd-Dj-VJ1"/>
+                            <constraint firstItem="pCE-KF-aHY" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="wvG-f9-0vb"/>
+                            <constraint firstItem="laP-LW-ded" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="zqN-bx-7LX"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Menu" image="Menu" id="pfC-Le-44j"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="pCE-KF-aHY" id="bNb-7v-Ftr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-57.971014492753625" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="A4c-Pk-1yh">
+            <size key="intrinsicContentSize" width="83" height="38.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="Menu" width="22.5" height="22"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="392" id="KGk-i7-Jjw" customClass="SummaryDetailViewCell" customModule="febys" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="353" height="392"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="353" height="392"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NVy-Fa-rsf">
+                        <rect key="frame" x="21" y="15" width="311" height="377"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Wse-F5-J3D">
+                                <rect key="frame" x="30" y="30" width="251" height="317"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" text="Order Summary (0 Item)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7nR-qk-izC" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="251" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="ABJ-m6-bPj">
+                                        <rect key="frame" x="0.0" y="39.5" width="251" height="224.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" priority="750" constant="30" id="RbT-2G-xhn"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="w5f-Tm-YhT">
+                                        <rect key="frame" x="0.0" y="284" width="251" height="33"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6l2-DT-u4M">
+                                                <rect key="frame" x="0.0" y="0.0" width="98" height="33"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HYv-AM-vU6" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="98" height="19.5"/>
+                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VAT Inclusive" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MDw-Is-caF" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="19.5" width="98" height="13.5"/>
+                                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="12"/>
+                                                        <color key="textColor" name="GrayMainColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hfb-sC-01k" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                                <rect key="frame" x="210.5" y="0.0" width="40.5" height="33"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="LightGrayColor"/>
+                        <constraints>
+                            <constraint firstItem="Wse-F5-J3D" firstAttribute="top" secondItem="NVy-Fa-rsf" secondAttribute="top" constant="30" id="6Oo-3r-h7K"/>
+                            <constraint firstItem="Wse-F5-J3D" firstAttribute="leading" secondItem="NVy-Fa-rsf" secondAttribute="leading" constant="30" id="ofW-M7-wj7"/>
+                            <constraint firstAttribute="bottom" secondItem="Wse-F5-J3D" secondAttribute="bottom" constant="30" id="xIc-rr-obz"/>
+                            <constraint firstAttribute="trailing" secondItem="Wse-F5-J3D" secondAttribute="trailing" constant="30" id="zBk-AO-4Yk"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="NVy-Fa-rsf" secondAttribute="bottom" priority="250" id="6vL-6r-6Eb"/>
+                    <constraint firstAttribute="trailing" secondItem="NVy-Fa-rsf" secondAttribute="trailing" constant="21" id="A2e-pP-DN1"/>
+                    <constraint firstItem="NVy-Fa-rsf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="JXK-NA-gsI"/>
+                    <constraint firstItem="NVy-Fa-rsf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="21" id="ZNN-KM-GzE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="stackView" destination="ABJ-m6-bPj" id="vk7-Rf-phe"/>
+                <outlet property="stackViewHeight" destination="RbT-2G-xhn" id="wpJ-Ed-sw6"/>
+                <outlet property="summaryLabel" destination="7nR-qk-izC" id="fVy-yy-APe"/>
+                <outlet property="totalPriceLabel" destination="Hfb-sC-01k" id="4L3-6F-DeI"/>
+                <outlet property="vatInclLabel" destination="MDw-Is-caF" id="gy2-rJ-14H"/>
+            </connections>
+            <point key="canvasLocation" x="161.59420289855075" y="226.33928571428569"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="7nR-qk-izC">
+            <size key="intrinsicContentSize" width="176" height="19.5"/>
+        </designable>
+        <designable name="HYv-AM-vU6">
+            <size key="intrinsicContentSize" width="98" height="19.5"/>
+        </designable>
+        <designable name="Hfb-sC-01k">
+            <size key="intrinsicContentSize" width="40.5" height="19.5"/>
+        </designable>
+        <designable name="MDw-Is-caF">
+            <size key="intrinsicContentSize" width="71.5" height="13.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="GrayMainColor">
+            <color red="0.58823529411764708" green="0.58823529411764708" blue="0.58823529411764708" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="LightGrayColor">
+            <color red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ReviewsHeaderViewCell" customModule="febys" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="467" height="284"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2S8-7G-L0G">
+                    <rect key="frame" x="0.0" y="0.0" width="467" height="284"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="cyO-z2-ysO">
+                            <rect key="frame" x="21" y="15" width="425" height="264"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" spacing="115" translatesAutoresizingMaskIntoConstraints="NO" id="e5c-eI-evf" userLabel="AverageRatingStack">
+                                    <rect key="frame" x="0.0" y="0.0" width="425" height="38"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="nri-rL-7ps">
+                                            <rect key="frame" x="0.0" y="0.0" width="148" height="38"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Average Rating:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nA4-Jk-Ktu" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="148" height="17"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
+                                                    <color key="textColor" name="BlackMainColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3.1 Based on 63 ratings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pMN-Ry-4GC" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="22" width="148" height="16"/>
+                                                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                                    <color key="textColor" name="BlackMainColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="S3z-uh-THW">
+                                            <rect key="frame" x="263" y="0.0" width="162" height="38"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RatingStar-Fill" translatesAutoresizingMaskIntoConstraints="NO" id="Bj8-ch-e5v">
+                                                    <rect key="frame" x="0.0" y="9" width="21" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="21" id="PkP-Nr-WZ2"/>
+                                                        <constraint firstAttribute="height" constant="20" id="gNE-PQ-ifv"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.7" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DMW-Iu-KT2">
+                                                    <rect key="frame" x="27" y="4.5" width="135" height="29"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="24"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="Zf2-YA-gjQ" userLabel="RatingProgressStack">
+                                    <rect key="frame" x="0.0" y="53" width="425" height="122.5"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Fac-TZ-bjf">
+                                            <rect key="frame" x="0.0" y="0.0" width="425" height="19"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="kqw-EB-uX3">
+                                                    <rect key="frame" x="0.0" y="2.5" width="340" height="13.5"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RatingStar-Fill" translatesAutoresizingMaskIntoConstraints="NO" id="agr-j5-7BS">
+                                                            <rect key="frame" x="0.0" y="2" width="0.0" height="10"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k8Y-Yj-Ahb" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                                            <rect key="frame" x="9" y="0.0" width="0.0" height="13.5"/>
+                                                            <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="12"/>
+                                                            <color key="textColor" name="BlackMainColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="qna-Ad-8Kw">
+                                                            <rect key="frame" x="18" y="4.5" width="322" height="5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="5" id="uNW-f9-B48"/>
+                                                            </constraints>
+                                                            <color key="progressTintColor" name="BlackMainColor"/>
+                                                        </progressView>
+                                                    </subviews>
+                                                </stackView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2cv-6d-MU5" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                                    <rect key="frame" x="340" y="1.5" width="85" height="16"/>
+                                                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                                    <color key="textColor" name="BlackMainColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="2cv-6d-MU5" firstAttribute="width" secondItem="Fac-TZ-bjf" secondAttribute="width" multiplier="0.2" id="Sf2-3F-okb"/>
+                                            </constraints>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="WPF-96-Ptl">
+                                            <rect key="frame" x="0.0" y="26" width="425" height="19"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="y5C-EZ-BnA">
+                                                    <rect key="frame" x="0.0" y="2.5" width="340" height="13.5"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RatingStar-Fill" translatesAutoresizingMaskIntoConstraints="NO" id="OcI-dE-Pq9">
+                                                            <rect key="frame" x="0.0" y="2" width="0.0" height="10"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GCC-PR-46D" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                                            <rect key="frame" x="9" y="0.0" width="0.0" height="13.5"/>
+                                                            <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="12"/>
+                                                            <color key="textColor" name="BlackMainColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="nK2-ML-DFD">
+                                                            <rect key="frame" x="18" y="4.5" width="322" height="5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="5" id="zgv-gL-weS"/>
+                                                            </constraints>
+                                                            <color key="progressTintColor" name="BlackMainColor"/>
+                                                        </progressView>
+                                                    </subviews>
+                                                </stackView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ha-i0-swO" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                                    <rect key="frame" x="340" y="1.5" width="85" height="16"/>
+                                                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                                    <color key="textColor" name="BlackMainColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="7Ha-i0-swO" firstAttribute="width" secondItem="WPF-96-Ptl" secondAttribute="width" multiplier="0.2" id="WbO-xz-sLw"/>
+                                            </constraints>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="U41-we-q5h">
+                                            <rect key="frame" x="0.0" y="52" width="425" height="18.5"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="pYd-bm-Iua">
+                                                    <rect key="frame" x="0.0" y="2.5" width="340" height="13.5"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RatingStar-Fill" translatesAutoresizingMaskIntoConstraints="NO" id="zu4-j0-W7h">
+                                                            <rect key="frame" x="0.0" y="2" width="0.0" height="10"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EiN-bu-ozR" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                                            <rect key="frame" x="9" y="0.0" width="0.0" height="13.5"/>
+                                                            <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="12"/>
+                                                            <color key="textColor" name="BlackMainColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="tsz-nv-bpE">
+                                                            <rect key="frame" x="18" y="4.5" width="322" height="5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="5" id="1Mg-vG-7jo"/>
+                                                            </constraints>
+                                                            <color key="progressTintColor" name="BlackMainColor"/>
+                                                        </progressView>
+                                                    </subviews>
+                                                </stackView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QjQ-SV-k4I" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                                    <rect key="frame" x="340" y="1.5" width="85" height="16"/>
+                                                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                                    <color key="textColor" name="BlackMainColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="QjQ-SV-k4I" firstAttribute="width" secondItem="U41-we-q5h" secondAttribute="width" multiplier="0.2" id="BT4-4H-o8h"/>
+                                            </constraints>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tYZ-xZ-iq8">
+                                            <rect key="frame" x="0.0" y="77.5" width="425" height="19"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="1Gq-xZ-ai2">
+                                                    <rect key="frame" x="0.0" y="3" width="340" height="13.5"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RatingStar-Fill" translatesAutoresizingMaskIntoConstraints="NO" id="8U7-r4-NBX">
+                                                            <rect key="frame" x="0.0" y="1.5" width="0.0" height="10"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dB2-Cz-7wu" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                                            <rect key="frame" x="9" y="0.0" width="0.0" height="13.5"/>
+                                                            <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="12"/>
+                                                            <color key="textColor" name="BlackMainColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="c9G-1s-XyW">
+                                                            <rect key="frame" x="18" y="4" width="322" height="5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="5" id="ET7-aT-Dme"/>
+                                                            </constraints>
+                                                            <color key="progressTintColor" name="BlackMainColor"/>
+                                                        </progressView>
+                                                    </subviews>
+                                                </stackView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aMo-uI-SJz" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                                    <rect key="frame" x="340" y="1.5" width="85" height="16"/>
+                                                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                                    <color key="textColor" name="BlackMainColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="aMo-uI-SJz" firstAttribute="width" secondItem="tYZ-xZ-iq8" secondAttribute="width" multiplier="0.2" id="t4G-gh-cE5"/>
+                                            </constraints>
+                                        </stackView>
+                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="S0B-xj-Gjv">
+                                            <rect key="frame" x="0.0" y="103.5" width="425" height="19"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="Tad-zx-E7r">
+                                                    <rect key="frame" x="0.0" y="3" width="340" height="13.5"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="RatingStar-Fill" translatesAutoresizingMaskIntoConstraints="NO" id="o1S-vb-mw6">
+                                                            <rect key="frame" x="0.0" y="1.5" width="10" height="10"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2iH-fJ-bxf" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                                            <rect key="frame" x="19" y="0.0" width="7" height="13.5"/>
+                                                            <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="12"/>
+                                                            <color key="textColor" name="BlackMainColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Rx4-dP-Kef">
+                                                            <rect key="frame" x="35" y="4" width="305" height="5"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="5" id="t5j-sN-VIR"/>
+                                                            </constraints>
+                                                            <color key="progressTintColor" name="BlackMainColor"/>
+                                                        </progressView>
+                                                    </subviews>
+                                                </stackView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DHE-Vt-lxK" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                                    <rect key="frame" x="340" y="1.5" width="85" height="16"/>
+                                                    <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                                    <color key="textColor" name="BlackMainColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="DHE-Vt-lxK" firstAttribute="width" secondItem="S0B-xj-Gjv" secondAttribute="width" multiplier="0.2" id="7eq-SF-mIT"/>
+                                            </constraints>
+                                        </stackView>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="fvz-C6-VYD">
+                                    <rect key="frame" x="0.0" y="190.5" width="425" height="73.5"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reviews" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Vi-Hg-GfA" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="50.5" height="15.5"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="13"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="6Cf-hV-yfo">
+                                            <rect key="frame" x="0.0" y="40.5" width="204" height="33"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yQF-MD-o07" customClass="FebysButton" customModule="febys" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="98" height="33"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="98" id="NBU-XE-Pe3"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                    <state key="normal" title="Most Recent">
+                                                        <color key="titleColor" systemColor="labelColor"/>
+                                                    </state>
+                                                    <state key="selected">
+                                                        <color key="titleColor" name="BlackMainColor"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                            <color key="value" name="MildGreyColor"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VWg-zM-dUH" customClass="FebysButton" customModule="febys" customModuleProvider="target">
+                                                    <rect key="frame" x="106" y="0.0" width="98" height="33"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="98" id="8T8-cm-NWu"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                                    <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                    <state key="normal" title="Top Reviews">
+                                                        <color key="titleColor" systemColor="labelColor"/>
+                                                    </state>
+                                                    <state key="selected">
+                                                        <color key="titleColor" name="BlackMainColor"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                            <real key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                            <color key="value" name="MildGreyColor"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="33" id="FDX-5a-C32"/>
+                                            </constraints>
+                                        </stackView>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="cyO-z2-ysO" firstAttribute="leading" secondItem="2S8-7G-L0G" secondAttribute="leading" constant="21" id="Udu-tf-UYr"/>
+                        <constraint firstAttribute="bottom" secondItem="cyO-z2-ysO" secondAttribute="bottom" priority="999" constant="5" id="gpS-OX-KvA"/>
+                        <constraint firstAttribute="trailing" secondItem="cyO-z2-ysO" secondAttribute="trailing" constant="21" id="mm2-KW-eab"/>
+                        <constraint firstItem="cyO-z2-ysO" firstAttribute="top" secondItem="2S8-7G-L0G" secondAttribute="top" constant="15" id="oAn-2T-S7n"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="2S8-7G-L0G" secondAttribute="trailing" id="05y-sh-4dE"/>
+                <constraint firstItem="2S8-7G-L0G" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="B05-gC-plx"/>
+                <constraint firstItem="2S8-7G-L0G" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Tvo-zc-HsX"/>
+                <constraint firstAttribute="bottom" secondItem="2S8-7G-L0G" secondAttribute="bottom" id="XhD-eT-4vS"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="avarageRatingLabel" destination="pMN-Ry-4GC" id="2WL-WZ-ZzF"/>
+                <outlet property="averageRatingStack" destination="e5c-eI-evf" id="D7Q-0c-aUz"/>
+                <outlet property="clientReviewsStack" destination="fvz-C6-VYD" id="CmR-tg-hLr"/>
+                <outlet property="fiveStarCount" destination="2cv-6d-MU5" id="llP-K1-lrJ"/>
+                <outlet property="fiveStarProgressBar" destination="qna-Ad-8Kw" id="3WY-9Y-LdP"/>
+                <outlet property="fourStarCount" destination="7Ha-i0-swO" id="dw0-Wb-KJS"/>
+                <outlet property="fourStarProgressBar" destination="nK2-ML-DFD" id="R13-7Q-poD"/>
+                <outlet property="mostRecentButton" destination="yQF-MD-o07" id="rvj-QW-jCh"/>
+                <outlet property="oneStarCount" destination="DHE-Vt-lxK" id="aPZ-Qg-cJO"/>
+                <outlet property="oneStarProgressBar" destination="Rx4-dP-Kef" id="ngB-VL-eWb"/>
+                <outlet property="ratingProgressStack" destination="Zf2-YA-gjQ" id="mYx-v8-n0S"/>
+                <outlet property="threeStarCount" destination="QjQ-SV-k4I" id="R1W-VY-fW4"/>
+                <outlet property="threeStarProgressBar" destination="tsz-nv-bpE" id="avr-qN-S4b"/>
+                <outlet property="topReviewsButton" destination="VWg-zM-dUH" id="g42-hM-HLP"/>
+                <outlet property="twoStarCount" destination="aMo-uI-SJz" id="Yyo-wk-xTo"/>
+                <outlet property="twoStarProgressBar" destination="c9G-1s-XyW" id="VZh-vs-01Y"/>
+            </connections>
+            <point key="canvasLocation" x="176.08695652173915" y="-95.089285714285708"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="2cv-6d-MU5">
+            <size key="intrinsicContentSize" width="8" height="16"/>
+        </designable>
+        <designable name="2iH-fJ-bxf">
+            <size key="intrinsicContentSize" width="7" height="13.5"/>
+        </designable>
+        <designable name="7Ha-i0-swO">
+            <size key="intrinsicContentSize" width="8" height="16"/>
+        </designable>
+        <designable name="7Vi-Hg-GfA">
+            <size key="intrinsicContentSize" width="50.5" height="15.5"/>
+        </designable>
+        <designable name="DHE-Vt-lxK">
+            <size key="intrinsicContentSize" width="8" height="16"/>
+        </designable>
+        <designable name="EiN-bu-ozR">
+            <size key="intrinsicContentSize" width="7" height="13.5"/>
+        </designable>
+        <designable name="GCC-PR-46D">
+            <size key="intrinsicContentSize" width="7" height="13.5"/>
+        </designable>
+        <designable name="QjQ-SV-k4I">
+            <size key="intrinsicContentSize" width="8" height="16"/>
+        </designable>
+        <designable name="VWg-zM-dUH">
+            <size key="intrinsicContentSize" width="68" height="26"/>
+        </designable>
+        <designable name="aMo-uI-SJz">
+            <size key="intrinsicContentSize" width="8" height="16"/>
+        </designable>
+        <designable name="dB2-Cz-7wu">
+            <size key="intrinsicContentSize" width="7" height="13.5"/>
+        </designable>
+        <designable name="k8Y-Yj-Ahb">
+            <size key="intrinsicContentSize" width="7" height="13.5"/>
+        </designable>
+        <designable name="nA4-Jk-Ktu">
+            <size key="intrinsicContentSize" width="103" height="17"/>
+        </designable>
+        <designable name="pMN-Ry-4GC">
+            <size key="intrinsicContentSize" width="148" height="16"/>
+        </designable>
+        <designable name="yQF-MD-o07">
+            <size key="intrinsicContentSize" width="69" height="26"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="RatingStar-Fill" width="10" height="10"/>
+        <namedColor name="BlackMainColor">
+            <color red="0.12941176470588237" green="0.12941176470588237" blue="0.12941176470588237" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="MildGreyColor">
+            <color red="0.88235294117647056" green="0.89803921568627454" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

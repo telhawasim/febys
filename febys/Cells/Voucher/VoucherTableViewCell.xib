@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="VoucherTableViewCell" rowHeight="157" id="KGk-i7-Jjw" customClass="VoucherTableViewCell" customModule="febys" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="432" height="260"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="432" height="260"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eSI-vZ-zXU" userLabel="ShadowView">
+                        <rect key="frame" x="21" y="15" width="390" height="239"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="36q-ca-cKQ">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="239"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.080000000000000002" contentMode="bottomLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="voucherCardBG" translatesAutoresizingMaskIntoConstraints="NO" id="cmm-g5-ljS">
+                                        <rect key="frame" x="0.0" y="0.0" width="390" height="239"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Q8y-2E-Spz">
+                                        <rect key="frame" x="21" y="25" width="348" height="189"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="W2V-Sv-srK">
+                                                <rect key="frame" x="0.0" y="0.0" width="348" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="hHs-vu-sDM"/>
+                                                </constraints>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="AEw-KF-PeS">
+                                                <rect key="frame" x="0.0" y="65" width="348" height="124"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="usq-zS-fU9">
+                                                        <rect key="frame" x="0.0" y="0.0" width="348" height="45"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Iqu-OZ-EiM">
+                                                                <rect key="frame" x="0.0" y="0.0" width="88.5" height="45"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Voucher Type:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0OF-MZ-hAk" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="88.5" height="16.5"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                                        <color key="textColor" name="GrayMainColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Refund" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m1O-Gh-8Nc" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="21.5" width="88.5" height="23.5"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                                                        <color key="textColor" name="BlackMainColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="VmS-IV-QtN">
+                                                                <rect key="frame" x="240" y="0.0" width="108" height="45"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Voucher Amount:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Un9-Dd-K9J" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="108" height="16.5"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                                        <color key="textColor" name="GrayMainColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="$600.50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6v9-Un-jmr" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="21.5" width="108" height="23.5"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                                                        <color key="textColor" name="BlackMainColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="45" id="fTR-Kl-dAA"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="8mv-0M-4gn">
+                                                        <rect key="frame" x="0.0" y="65" width="348" height="59"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="bgs-ux-lNv">
+                                                                <rect key="frame" x="0.0" y="0.0" width="110.5" height="59"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Voucher Code:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1FJ-Ix-FOU" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="93" height="16.5"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                                        <color key="textColor" red="0.59215686270000001" green="0.59215686270000001" blue="0.59215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="WCLN24454KJ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d07-ik-qK1" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="21.5" width="110.5" height="37.5"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="HTm-Dc-WQH">
+                                                                <rect key="frame" x="240" y="0.0" width="108" height="59"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expiration Date:  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9y8-39-H2a" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="108" height="16.5"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                                        <color key="textColor" red="0.59215686270000001" green="0.59215686270000001" blue="0.59215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="May 28, 2021" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="68z-rR-zFi" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="21.5" width="108" height="37.5"/>
+                                                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="45" id="MCW-Vn-2J0"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="Q8y-2E-Spz" firstAttribute="top" secondItem="36q-ca-cKQ" secondAttribute="top" constant="25" id="2oh-2v-XGD"/>
+                                    <constraint firstAttribute="trailing" secondItem="Q8y-2E-Spz" secondAttribute="trailing" constant="21" id="93F-xi-hQD"/>
+                                    <constraint firstAttribute="trailing" secondItem="cmm-g5-ljS" secondAttribute="trailing" id="B7F-RD-hwZ"/>
+                                    <constraint firstItem="Q8y-2E-Spz" firstAttribute="leading" secondItem="36q-ca-cKQ" secondAttribute="leading" constant="21" id="Etk-az-812"/>
+                                    <constraint firstAttribute="bottom" secondItem="Q8y-2E-Spz" secondAttribute="bottom" constant="25" id="VHn-sE-O7h"/>
+                                    <constraint firstItem="cmm-g5-ljS" firstAttribute="top" secondItem="36q-ca-cKQ" secondAttribute="top" id="kb0-nW-YuP"/>
+                                    <constraint firstAttribute="bottom" secondItem="cmm-g5-ljS" secondAttribute="bottom" id="mpu-m3-0aR"/>
+                                    <constraint firstItem="cmm-g5-ljS" firstAttribute="leading" secondItem="36q-ca-cKQ" secondAttribute="leading" id="tdD-6x-C4i"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="36q-ca-cKQ" firstAttribute="top" secondItem="eSI-vZ-zXU" secondAttribute="top" id="20K-pF-KDn"/>
+                            <constraint firstItem="36q-ca-cKQ" firstAttribute="leading" secondItem="eSI-vZ-zXU" secondAttribute="leading" id="HWy-Tu-nxm"/>
+                            <constraint firstAttribute="bottom" secondItem="36q-ca-cKQ" secondAttribute="bottom" id="U6q-jt-PKZ"/>
+                            <constraint firstAttribute="trailing" secondItem="36q-ca-cKQ" secondAttribute="trailing" id="cTz-eU-1Ef"/>
+                            <constraint firstItem="36q-ca-cKQ" firstAttribute="centerY" secondItem="eSI-vZ-zXU" secondAttribute="centerY" id="emS-J5-MAa"/>
+                            <constraint firstItem="36q-ca-cKQ" firstAttribute="centerX" secondItem="eSI-vZ-zXU" secondAttribute="centerX" id="pot-Zv-Jl1"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.080000000000000002"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="4" height="2"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="eSI-vZ-zXU" secondAttribute="trailing" constant="21" id="6fG-FA-m31"/>
+                    <constraint firstItem="eSI-vZ-zXU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="Jtk-S5-IEF"/>
+                    <constraint firstItem="eSI-vZ-zXU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="21" id="Msu-AP-rfG"/>
+                    <constraint firstAttribute="bottom" secondItem="eSI-vZ-zXU" secondAttribute="bottom" constant="15" id="kWI-AL-Uyl"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="voucherAmountLabel" destination="6v9-Un-jmr" id="New-Wn-8jo"/>
+                <outlet property="voucherCodeLabel" destination="d07-ik-qK1" id="u9g-1E-Uka"/>
+                <outlet property="voucherDateLabel" destination="68z-rR-zFi" id="UFN-tE-WHX"/>
+                <outlet property="voucherTypeLabel" destination="m1O-Gh-8Nc" id="G6a-aG-XVK"/>
+            </connections>
+            <point key="canvasLocation" x="21.739130434782609" y="119.19642857142857"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="0OF-MZ-hAk">
+            <size key="intrinsicContentSize" width="88.5" height="16.5"/>
+        </designable>
+        <designable name="1FJ-Ix-FOU">
+            <size key="intrinsicContentSize" width="93" height="16.5"/>
+        </designable>
+        <designable name="68z-rR-zFi">
+            <size key="intrinsicContentSize" width="97.5" height="19"/>
+        </designable>
+        <designable name="6v9-Un-jmr">
+            <size key="intrinsicContentSize" width="58" height="19"/>
+        </designable>
+        <designable name="9y8-39-H2a">
+            <size key="intrinsicContentSize" width="108" height="16.5"/>
+        </designable>
+        <designable name="Un9-Dd-K9J">
+            <size key="intrinsicContentSize" width="108" height="16.5"/>
+        </designable>
+        <designable name="d07-ik-qK1">
+            <size key="intrinsicContentSize" width="110.5" height="19"/>
+        </designable>
+        <designable name="m1O-Gh-8Nc">
+            <size key="intrinsicContentSize" width="52" height="19"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="homeLogo" width="109" height="29.5"/>
+        <image name="voucherCardBG" width="396" height="239"/>
+        <namedColor name="BlackMainColor">
+            <color red="0.12941176470588237" green="0.12941176470588237" blue="0.12941176470588237" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="GrayMainColor">
+            <color red="0.58823529411764708" green="0.58823529411764708" blue="0.58823529411764708" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

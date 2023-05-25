@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="358" id="KGk-i7-Jjw" customClass="InnerTableViewCell" customModule="febys" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="355" height="358"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="355" height="358"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FST-ju-cQw">
+                        <rect key="frame" x="21" y="0.0" width="313" height="230"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SW2-be-gBv" customClass="SteppedProgressBar" customModule="febys" customModuleProvider="target">
+                                <rect key="frame" x="15" y="10" width="283" height="60"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="m6h-s8-Rpa"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="activeColor">
+                                        <color key="value" name="Green-Timeline"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="inactiveColor">
+                                        <color key="value" name="MildGreyColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="inactiveTextColor">
+                                        <color key="value" name="GrayMainColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="circleRadius">
+                                        <real key="value" value="11"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="currentTab">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="activeTextColor">
+                                        <color key="value" name="BlackMainColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="titleOffset">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="strokeWidth">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WWU-Fv-N8M" customClass="IntrinsicTableView" customModule="febys" customModuleProvider="target">
+                                <rect key="frame" x="15" y="100" width="283" height="100"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Im0-al-vQp"/>
+                                </constraints>
+                            </tableView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sg8-PW-g5s" customClass="FebysButton" customModule="febys" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="313" height="230"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="sg8-PW-g5s" firstAttribute="leading" secondItem="FST-ju-cQw" secondAttribute="leading" id="0tD-ks-rxD"/>
+                            <constraint firstItem="SW2-be-gBv" firstAttribute="top" secondItem="FST-ju-cQw" secondAttribute="top" constant="10" id="44Y-CJ-ikH"/>
+                            <constraint firstAttribute="trailing" secondItem="WWU-Fv-N8M" secondAttribute="trailing" constant="15" id="CcJ-MJ-icp"/>
+                            <constraint firstItem="SW2-be-gBv" firstAttribute="trailing" secondItem="WWU-Fv-N8M" secondAttribute="trailing" id="EdX-uw-e2a"/>
+                            <constraint firstItem="sg8-PW-g5s" firstAttribute="centerY" secondItem="FST-ju-cQw" secondAttribute="centerY" id="IA6-8m-y50"/>
+                            <constraint firstItem="sg8-PW-g5s" firstAttribute="centerX" secondItem="FST-ju-cQw" secondAttribute="centerX" id="Ns2-4n-O1K"/>
+                            <constraint firstItem="SW2-be-gBv" firstAttribute="leading" secondItem="WWU-Fv-N8M" secondAttribute="leading" id="OFQ-Gh-xFR"/>
+                            <constraint firstItem="WWU-Fv-N8M" firstAttribute="top" secondItem="SW2-be-gBv" secondAttribute="bottom" constant="30" id="XRf-9E-JXc"/>
+                            <constraint firstItem="WWU-Fv-N8M" firstAttribute="leading" secondItem="FST-ju-cQw" secondAttribute="leading" constant="15" id="caK-qC-WHL"/>
+                            <constraint firstItem="sg8-PW-g5s" firstAttribute="trailing" secondItem="FST-ju-cQw" secondAttribute="trailing" id="dPU-mT-GnU"/>
+                            <constraint firstItem="sg8-PW-g5s" firstAttribute="bottom" secondItem="FST-ju-cQw" secondAttribute="bottom" id="dXD-I1-i9h"/>
+                            <constraint firstAttribute="bottom" secondItem="WWU-Fv-N8M" secondAttribute="bottom" constant="30" id="gJr-Zt-BLT"/>
+                            <constraint firstItem="sg8-PW-g5s" firstAttribute="top" secondItem="FST-ju-cQw" secondAttribute="top" id="gzs-r0-EBm"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" name="MildGreyColor"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="FST-ju-cQw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="89g-9V-BYG"/>
+                    <constraint firstAttribute="trailing" secondItem="FST-ju-cQw" secondAttribute="trailing" constant="21" id="9rO-fK-m5k"/>
+                    <constraint firstAttribute="bottom" secondItem="FST-ju-cQw" secondAttribute="bottom" priority="999" constant="30" id="WaC-9y-bxr"/>
+                    <constraint firstItem="FST-ju-cQw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="21" id="dWa-pe-ml2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bottomConstraint" destination="gJr-Zt-BLT" id="4SY-8b-7Ps"/>
+                <outlet property="leadingConstraint" destination="caK-qC-WHL" id="D7j-B1-kAt"/>
+                <outlet property="orderDetailButton" destination="sg8-PW-g5s" id="fdr-Jg-Jzv"/>
+                <outlet property="orderStepView" destination="SW2-be-gBv" id="1gA-JZ-WWe"/>
+                <outlet property="tableView" destination="WWU-Fv-N8M" id="ugR-vu-hlk"/>
+                <outlet property="tableViewHeight" destination="Im0-al-vQp" id="P1t-sj-Ub4"/>
+                <outlet property="topConstraint" destination="44Y-CJ-ikH" id="O0B-MZ-us8"/>
+                <outlet property="trailingConstraint" destination="CcJ-MJ-icp" id="gkr-oc-hT7"/>
+            </connections>
+            <point key="canvasLocation" x="83.333333333333343" y="137.27678571428569"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="sg8-PW-g5s">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="BlackMainColor">
+            <color red="0.12941176470588237" green="0.12941176470588237" blue="0.12941176470588237" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="GrayMainColor">
+            <color red="0.58823529411764708" green="0.58823529411764708" blue="0.58823529411764708" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Green-Timeline">
+            <color red="0.42352941176470588" green="0.8784313725490196" blue="0.2196078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="MildGreyColor">
+            <color red="0.88235294117647056" green="0.89803921568627454" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

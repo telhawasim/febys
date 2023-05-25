@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MenuTableViewCell" rowHeight="59" id="KGk-i7-Jjw" customClass="MenuTableViewCell" customModule="febys" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="351" height="58"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="351" height="58"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k0o-WK-aC8">
+                        <rect key="frame" x="0.0" y="0.0" width="351" height="58"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discount Mall" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3cG-1g-r0p" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                <rect key="frame" x="65" y="20.5" width="82.5" height="15.5"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iBH-bn-XJL" customClass="FebysButton" customModule="febys" customModuleProvider="target">
+                                <rect key="frame" x="302" y="16.5" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="LMa-Fp-330"/>
+                                    <constraint firstAttribute="height" constant="25" id="oki-HR-nbe"/>
+                                </constraints>
+                                <state key="normal" image="rightArrow"/>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5AK-b3-7mA">
+                                <rect key="frame" x="21" y="56" width="309" height="1"/>
+                                <color key="backgroundColor" red="0.88235294117647056" green="0.89803921568627454" blue="0.90980392156862744" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="hZl-pb-cp9"/>
+                                </constraints>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lsR-Xq-z9e">
+                                <rect key="frame" x="29" y="17" width="22" height="22"/>
+                                <color key="tintColor" red="0.76862745098039209" green="0.078431372549019607" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="KcH-sK-wCV"/>
+                                    <constraint firstAttribute="width" constant="22" id="gNI-Ua-ooY"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5AK-b3-7mA" firstAttribute="leading" secondItem="k0o-WK-aC8" secondAttribute="leading" constant="21" id="1kZ-qX-NFB"/>
+                            <constraint firstItem="lsR-Xq-z9e" firstAttribute="top" secondItem="k0o-WK-aC8" secondAttribute="top" constant="17" id="6MD-Df-22K"/>
+                            <constraint firstAttribute="trailing" secondItem="iBH-bn-XJL" secondAttribute="trailing" constant="24" id="AEf-2l-85E"/>
+                            <constraint firstAttribute="trailing" secondItem="5AK-b3-7mA" secondAttribute="trailing" constant="21" id="DLI-XU-pX3"/>
+                            <constraint firstItem="iBH-bn-XJL" firstAttribute="centerY" secondItem="k0o-WK-aC8" secondAttribute="centerY" id="NZc-eH-Kg6"/>
+                            <constraint firstItem="3cG-1g-r0p" firstAttribute="leading" secondItem="lsR-Xq-z9e" secondAttribute="trailing" constant="14" id="PDn-Ix-ElS"/>
+                            <constraint firstAttribute="bottom" secondItem="5AK-b3-7mA" secondAttribute="bottom" constant="1" id="THZ-lX-k1Q"/>
+                            <constraint firstItem="3cG-1g-r0p" firstAttribute="centerY" secondItem="lsR-Xq-z9e" secondAttribute="centerY" id="e0h-Pi-v0e"/>
+                            <constraint firstItem="5AK-b3-7mA" firstAttribute="top" secondItem="lsR-Xq-z9e" secondAttribute="bottom" constant="17" id="pEJ-Tb-QZB"/>
+                            <constraint firstItem="lsR-Xq-z9e" firstAttribute="leading" secondItem="k0o-WK-aC8" secondAttribute="leading" constant="29" id="sZu-e5-R5h"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="k0o-WK-aC8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Fan-XP-bYS"/>
+                    <constraint firstAttribute="bottom" secondItem="k0o-WK-aC8" secondAttribute="bottom" id="MKK-8L-pql"/>
+                    <constraint firstItem="k0o-WK-aC8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="VJg-UO-XFu"/>
+                    <constraint firstAttribute="trailing" secondItem="k0o-WK-aC8" secondAttribute="trailing" id="vJ7-V7-fby"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="iconimage" destination="lsR-Xq-z9e" id="q1K-Ui-M3R"/>
+                <outlet property="titleLabel" destination="3cG-1g-r0p" id="ONP-gc-mDl"/>
+            </connections>
+            <point key="canvasLocation" x="132.60869565217394" y="67.299107142857139"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="3cG-1g-r0p">
+            <size key="intrinsicContentSize" width="82.5" height="15.5"/>
+        </designable>
+        <designable name="iBH-bn-XJL">
+            <size key="intrinsicContentSize" width="8" height="22"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="rightArrow" width="8" height="14"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

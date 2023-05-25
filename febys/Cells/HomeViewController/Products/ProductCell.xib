@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ProductCell" customModule="febys" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="201" height="353"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="201" height="353"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="OeY-dk-mT4">
+                        <rect key="frame" x="0.0" y="0.0" width="201" height="292"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no-image" translatesAutoresizingMaskIntoConstraints="NO" id="JKO-l5-WQJ">
+                                <rect key="frame" x="0.0" y="0.0" width="201" height="201"/>
+                                <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="JKO-l5-WQJ" secondAttribute="height" multiplier="1:1" id="bTq-rq-NnA"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" name="LightGrayColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="0nB-RK-8WE">
+                                <rect key="frame" x="0.0" y="231" width="201" height="61"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hardside Carry" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mT6-ew-DHv" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                        <rect key="frame" x="48.5" y="0.0" width="104" height="18"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="18" id="0RK-wg-LFq"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
+                                        <color key="textColor" name="BlackMainColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Patch belted denim dress" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9YP-8x-bxA" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                        <rect key="frame" x="33" y="25" width="135.5" height="14"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="14" id="8KG-v1-3yu"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="12"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="r3R-T0-Ccb">
+                                        <rect key="frame" x="62.5" y="46" width="76" height="15"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="hxG-Nt-yHU">
+                                                <rect key="frame" x="0.0" y="1" width="37" height="13.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$89.39" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W6v-qX-Cnr" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="31" height="13.5"/>
+                                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="10"/>
+                                                        <color key="textColor" name="GrayMainColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2vB-B3-uW0" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                                        <rect key="frame" x="33" y="0.0" width="4" height="13.5"/>
+                                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="12"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$89.39" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7n8-fT-vdB" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                                <rect key="frame" x="39" y="1" width="37" height="13.5"/>
+                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="12"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="15" id="MAQ-ZB-ynm"/>
+                                        </constraints>
+                                    </stackView>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Save GHS 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N9x-oe-Lie" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                        <rect key="frame" x="72.5" y="61" width="56" height="20"/>
+                                        <color key="backgroundColor" name="LightRed"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="gav-Q2-7Oc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="10"/>
+                                        <color key="textColor" name="BlackMainColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="leftInset">
+                                                <real key="value" value="7"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="rightInset">
+                                                <real key="value" value="7"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TMk-I2-v0r" customClass="FebysButton" customModule="febys" customModuleProvider="target">
+                        <rect key="frame" x="153" y="0.0" width="48" height="48"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="48" id="IaT-hu-tZ4"/>
+                            <constraint firstAttribute="height" constant="48" id="NYL-OH-z6T"/>
+                        </constraints>
+                        <state key="normal" image="heart"/>
+                    </button>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="TMk-I2-v0r" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="3XI-GP-ajg"/>
+                <constraint firstItem="OeY-dk-mT4" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Bod-Js-RUG"/>
+                <constraint firstAttribute="trailing" secondItem="TMk-I2-v0r" secondAttribute="trailing" id="FWq-y0-JaH"/>
+                <constraint firstAttribute="bottom" secondItem="OeY-dk-mT4" secondAttribute="bottom" priority="999" id="Ha2-bx-8pk"/>
+                <constraint firstItem="OeY-dk-mT4" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ijm-BH-g7l"/>
+                <constraint firstAttribute="trailing" secondItem="OeY-dk-mT4" secondAttribute="trailing" id="vdd-4Y-KnI"/>
+            </constraints>
+            <size key="customSize" width="456" height="464"/>
+            <connections>
+                <outlet property="favouriteIcon" destination="TMk-I2-v0r" id="tJb-tS-ODb"/>
+                <outlet property="mainImageView" destination="JKO-l5-WQJ" id="fjE-FM-fLj"/>
+                <outlet property="mainStackView" destination="OeY-dk-mT4" id="3Fe-gt-xM7"/>
+                <outlet property="nameLabel" destination="9YP-8x-bxA" id="kqR-Zb-dp4"/>
+                <outlet property="originalPriceLabel" destination="W6v-qX-Cnr" id="ta8-ib-BV8"/>
+                <outlet property="originalStackView" destination="hxG-Nt-yHU" id="zbl-oV-AX5"/>
+                <outlet property="priceLabel" destination="7n8-fT-vdB" id="5Yo-fi-EYG"/>
+                <outlet property="savedPriceLabel" destination="N9x-oe-Lie" id="IuE-2l-zHS"/>
+                <outlet property="storeNameLabel" destination="mT6-ew-DHv" id="ViK-HD-ols"/>
+            </connections>
+            <point key="canvasLocation" x="132.60869565217394" y="65.959821428571431"/>
+        </collectionViewCell>
+    </objects>
+    <designables>
+        <designable name="2vB-B3-uW0">
+            <size key="intrinsicContentSize" width="4" height="13.5"/>
+        </designable>
+        <designable name="7n8-fT-vdB">
+            <size key="intrinsicContentSize" width="37" height="13.5"/>
+        </designable>
+        <designable name="9YP-8x-bxA">
+            <size key="intrinsicContentSize" width="135.5" height="13.5"/>
+        </designable>
+        <designable name="N9x-oe-Lie">
+            <size key="intrinsicContentSize" width="56" height="11.5"/>
+        </designable>
+        <designable name="TMk-I2-v0r">
+            <size key="intrinsicContentSize" width="36" height="36"/>
+        </designable>
+        <designable name="W6v-qX-Cnr">
+            <size key="intrinsicContentSize" width="31" height="11.5"/>
+        </designable>
+        <designable name="mT6-ew-DHv">
+            <size key="intrinsicContentSize" width="104" height="18"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="heart" width="36" height="36"/>
+        <image name="no-image" width="216" height="216"/>
+        <namedColor name="BlackMainColor">
+            <color red="0.12941176470588237" green="0.12941176470588237" blue="0.12941176470588237" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="GrayMainColor">
+            <color red="0.58823529411764708" green="0.58823529411764708" blue="0.58823529411764708" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="LightGrayColor">
+            <color red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="LightRed">
+            <color red="0.7686274509803922" green="0.074509803921568626" blue="0.16078431372549021" alpha="0.10000000149011612" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Febys Plus View Controller-->
+        <scene sceneID="62M-QW-bYy">
+            <objects>
+                <viewController storyboardIdentifier="FebysPlusViewController" hidesBottomBarWhenPushed="YES" id="oPg-9c-pX2" customClass="FebysPlusViewController" customModule="febys" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zgc-Q6-viN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AZM-S6-RsM">
+                                <rect key="frame" x="0.0" y="44" width="414" height="65"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="Febys Plus" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q30-Yf-irQ" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                        <rect key="frame" x="166.5" y="8" width="81.5" height="49"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LDB-Jn-Kny" customClass="FebysButton" customModule="febys" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="7.5" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="oPa-RO-4tQ"/>
+                                            <constraint firstAttribute="height" constant="50" id="wl7-mY-QUN"/>
+                                        </constraints>
+                                        <state key="normal" image="back-arrow"/>
+                                        <connections>
+                                            <action selector="backButtonTapped:" destination="oPg-9c-pX2" eventType="touchUpInside" id="gXh-cK-QyU"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="q30-Yf-irQ" firstAttribute="top" secondItem="AZM-S6-RsM" secondAttribute="top" constant="8" id="9w3-4J-3db"/>
+                                    <constraint firstItem="LDB-Jn-Kny" firstAttribute="leading" secondItem="AZM-S6-RsM" secondAttribute="leading" id="DZV-Cg-5NW"/>
+                                    <constraint firstItem="q30-Yf-irQ" firstAttribute="centerX" secondItem="AZM-S6-RsM" secondAttribute="centerX" id="E7G-aM-29b"/>
+                                    <constraint firstItem="LDB-Jn-Kny" firstAttribute="centerY" secondItem="AZM-S6-RsM" secondAttribute="centerY" id="Rhk-Xg-ArG"/>
+                                    <constraint firstAttribute="bottom" secondItem="q30-Yf-irQ" secondAttribute="bottom" constant="8" id="cc4-sp-l4e"/>
+                                    <constraint firstAttribute="height" constant="65" id="vq8-XT-OOe"/>
+                                    <constraint firstItem="q30-Yf-irQ" firstAttribute="centerY" secondItem="AZM-S6-RsM" secondAttribute="centerY" id="wJw-II-ZDE"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="joZ-Jd-I6k">
+                                <rect key="frame" x="0.0" y="109" width="414" height="787"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="oPg-9c-pX2" id="uyh-oF-P7F"/>
+                                    <outlet property="delegate" destination="oPg-9c-pX2" id="9dD-4M-TPk"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="E1e-pa-thn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="joZ-Jd-I6k" firstAttribute="leading" secondItem="E1e-pa-thn" secondAttribute="leading" id="9F6-cY-GQp"/>
+                            <constraint firstItem="AZM-S6-RsM" firstAttribute="leading" secondItem="E1e-pa-thn" secondAttribute="leading" id="GB3-kN-lj3"/>
+                            <constraint firstAttribute="bottom" secondItem="joZ-Jd-I6k" secondAttribute="bottom" id="LJo-wf-otd"/>
+                            <constraint firstItem="AZM-S6-RsM" firstAttribute="top" secondItem="E1e-pa-thn" secondAttribute="top" id="RsO-gD-qFi"/>
+                            <constraint firstItem="E1e-pa-thn" firstAttribute="trailing" secondItem="joZ-Jd-I6k" secondAttribute="trailing" id="YvK-wE-VP7"/>
+                            <constraint firstItem="E1e-pa-thn" firstAttribute="trailing" secondItem="AZM-S6-RsM" secondAttribute="trailing" id="arO-tQ-kCa"/>
+                            <constraint firstItem="joZ-Jd-I6k" firstAttribute="top" secondItem="AZM-S6-RsM" secondAttribute="bottom" id="u9f-wm-aMd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="joZ-Jd-I6k" id="8Dn-H8-drE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bDW-fw-xCD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-167" y="-46"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="LDB-Jn-Kny">
+            <size key="intrinsicContentSize" width="10.5" height="22"/>
+        </designable>
+        <designable name="q30-Yf-irQ">
+            <size key="intrinsicContentSize" width="81.5" height="19.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="back-arrow" width="10.5" height="19"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

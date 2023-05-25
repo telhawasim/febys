@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MessageFooter" customModule="febys" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="160"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zwa-CT-hza">
+                    <rect key="frame" x="21" y="0.0" width="372" height="132"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Qx1-gD-dX4">
+                            <rect key="frame" x="0.0" y="0.0" width="372" height="132"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2L6-iL-Itx" userLabel="DividerTop">
+                                    <rect key="frame" x="0.0" y="0.0" width="372" height="1"/>
+                                    <color key="backgroundColor" name="MildGreyColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="1" id="ph3-Lt-m5N"/>
+                                    </constraints>
+                                </view>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="v3r-YC-yc7">
+                                    <rect key="frame" x="0.0" y="16" width="372" height="100"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message for the Seller:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CDa-Os-T1z">
+                                            <rect key="frame" x="0.0" y="0.0" width="372" height="20"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="20" id="Ciq-uT-v5r"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="h2Y-7X-fAd">
+                                            <rect key="frame" x="0.0" y="30" width="372" height="70"/>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <color key="tintColor" name="BlackMainColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="70" id="VcD-nq-RLw"/>
+                                            </constraints>
+                                            <color key="textColor" systemColor="labelColor"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                    </subviews>
+                                </stackView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UjL-uu-nug" userLabel="DividerBottom">
+                                    <rect key="frame" x="0.0" y="131" width="372" height="1"/>
+                                    <color key="backgroundColor" name="MildGreyColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="E11-PK-2e3"/>
+                                        <constraint firstAttribute="height" constant="1" id="Ob7-hn-Qif"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Qx1-gD-dX4" secondAttribute="bottom" id="1KE-yf-jMc"/>
+                        <constraint firstItem="Qx1-gD-dX4" firstAttribute="top" secondItem="Zwa-CT-hza" secondAttribute="top" id="VMm-oO-PFv"/>
+                        <constraint firstItem="Qx1-gD-dX4" firstAttribute="leading" secondItem="Zwa-CT-hza" secondAttribute="leading" id="deD-lU-ohu"/>
+                        <constraint firstAttribute="trailing" secondItem="Qx1-gD-dX4" secondAttribute="trailing" id="nNc-h0-kk4"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Zwa-CT-hza" secondAttribute="trailing" constant="21" id="FP4-tK-Lff"/>
+                <constraint firstAttribute="bottom" secondItem="Zwa-CT-hza" secondAttribute="bottom" priority="999" constant="30" id="Gn9-1u-HGs"/>
+                <constraint firstItem="Zwa-CT-hza" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="PHm-hr-8cn"/>
+                <constraint firstItem="Zwa-CT-hza" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="21" id="p3o-EX-QaW"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="messageField" destination="h2Y-7X-fAd" id="icC-ws-f4c"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="-136.60714285714286"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="BlackMainColor">
+            <color red="0.12941176470588237" green="0.12941176470588237" blue="0.12941176470588237" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="MildGreyColor">
+            <color red="0.88235294117647056" green="0.89803921568627454" blue="0.90980392156862744" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

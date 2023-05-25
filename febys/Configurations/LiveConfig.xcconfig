@@ -1,0 +1,23 @@
+//
+//  DevConfig.xcconfig
+//  febys
+//
+//  Created by Waseem Nasir on 25/06/2021.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+//MARK: FEBYS URLS
+base_url = https:\/\/api.febys.com
+base_url_config = https:\/\/api.febys.com/config
+base_url_auth = https:\/\/auth.febys.com/auth
+base_url_search = https:\/\/search.febys.com/search
+
+//MARK: KEYCLOAK
+client_secret = a9c8e3d4-6cc3-4db1-a25a-9abf99eccedd
+
+//MARK: GOOGLE
+google_maps_api = AIzaSyBj66cd6fqA3D7MFkWLdy1M6JBaDN_OPVg
+google_places_api = AIzaSyBPAvN8hzX2xccW7J3vZ1Ii2EczJEgcHfc
+gmail_client_id = 912540354085-24cpnf9p003flanmas9ndkmlbdek0bia.apps.googleusercontent.com

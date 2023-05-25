@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="574" id="KGk-i7-Jjw" customClass="ProductsTableViewCell" customModule="febys" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="483" height="574"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="483" height="574"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="ZDd-6h-KCE">
+                        <rect key="frame" x="0.0" y="15" width="483" height="543"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="AYo-L3-bd1">
+                                <rect key="frame" x="0.0" y="0.0" width="483" height="66"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trending Products" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ER8-nS-fjq" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="483" height="19.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
+                                        <color key="textColor" name="BlackMainColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Discover the top selling products" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="01R-2e-qCb" customClass="FebysLabel" customModule="febys" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="26.5" width="483" height="39.5"/>
+                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="12"/>
+                                        <color key="textColor" name="BlackMainColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Uzn-SR-ZTw">
+                                <rect key="frame" x="0.0" y="96" width="483" height="33"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="XaC-os-eSO"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="g6h-43-SXP">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <connections>
+                                    <outlet property="dataSource" destination="KGk-i7-Jjw" id="qZ1-Fi-lcP"/>
+                                    <outlet property="delegate" destination="KGk-i7-Jjw" id="YzV-fD-OVu"/>
+                                </connections>
+                            </collectionView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="MCd-jm-tjG">
+                                <rect key="frame" x="0.0" y="159" width="483" height="305"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="305" id="4R4-mo-7kQ"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="lxu-tP-wrh">
+                                    <size key="itemSize" width="159" height="42"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="10" minY="10" maxX="10" maxY="10"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="KGk-i7-Jjw" id="ZYG-00-PVd"/>
+                                    <outlet property="delegate" destination="KGk-i7-Jjw" id="cxT-0O-mhn"/>
+                                </connections>
+                            </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lh5-vZ-WOD">
+                                <rect key="frame" x="0.0" y="494" width="483" height="49"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v4Z-QX-QZD" customClass="FebysButton" customModule="febys" customModuleProvider="target">
+                                        <rect key="frame" x="21" y="0.0" width="441" height="49"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="49" id="DIb-xS-gUr"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="18"/>
+                                        <state key="normal" title="Shop Now">
+                                            <color key="titleColor" name="BlackMainColor"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" name="BlackMainColor"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="v4Z-QX-QZD" secondAttribute="bottom" id="MRi-gm-Yvj"/>
+                                    <constraint firstItem="v4Z-QX-QZD" firstAttribute="leading" secondItem="lh5-vZ-WOD" secondAttribute="leading" constant="21" id="YeJ-sc-oiP"/>
+                                    <constraint firstAttribute="trailing" secondItem="v4Z-QX-QZD" secondAttribute="trailing" constant="21" id="uQR-w6-v7d"/>
+                                    <constraint firstItem="v4Z-QX-QZD" firstAttribute="top" secondItem="lh5-vZ-WOD" secondAttribute="top" id="vCc-gU-Oei"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="ZDd-6h-KCE" secondAttribute="bottom" priority="999" constant="16" id="C6R-Ku-DGn"/>
+                    <constraint firstItem="ZDd-6h-KCE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="Zw9-iv-uTL"/>
+                    <constraint firstItem="ZDd-6h-KCE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="go0-YS-sNW"/>
+                    <constraint firstAttribute="trailing" secondItem="ZDd-6h-KCE" secondAttribute="trailing" id="vVx-U0-zzP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="categoriesCollectionView" destination="Uzn-SR-ZTw" id="iKQ-DN-veQ"/>
+                <outlet property="collectionView" destination="MCd-jm-tjG" id="qBo-X5-oke"/>
+                <outlet property="collectionViewHeight" destination="4R4-mo-7kQ" id="C2Y-A1-3bg"/>
+                <outlet property="contentViewBottomConstraint" destination="C6R-Ku-DGn" id="0dV-KE-bjS"/>
+                <outlet property="contentViewTopConstraint" destination="Zw9-iv-uTL" id="tcx-tT-BS0"/>
+                <outlet property="detailLabel" destination="01R-2e-qCb" id="718-yZ-Z47"/>
+                <outlet property="shopNowButton" destination="v4Z-QX-QZD" id="Z97-ha-Kfh"/>
+                <outlet property="shopNowButtonView" destination="lh5-vZ-WOD" id="dhv-Vo-CHN"/>
+                <outlet property="titleLabel" destination="ER8-nS-fjq" id="VdR-Mk-Hoy"/>
+            </connections>
+            <point key="canvasLocation" x="187.68115942028987" y="255.80357142857142"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="01R-2e-qCb">
+            <size key="intrinsicContentSize" width="173.5" height="13.5"/>
+        </designable>
+        <designable name="ER8-nS-fjq">
+            <size key="intrinsicContentSize" width="135.5" height="19.5"/>
+        </designable>
+        <designable name="v4Z-QX-QZD">
+            <size key="intrinsicContentSize" width="87" height="34"/>
+        </designable>
+    </designables>
+    <resources>
+        <namedColor name="BlackMainColor">
+            <color red="0.12941176470588237" green="0.12941176470588237" blue="0.12941176470588237" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
